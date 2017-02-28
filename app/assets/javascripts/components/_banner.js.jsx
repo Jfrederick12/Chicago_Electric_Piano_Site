@@ -1,7 +1,9 @@
 const Banner = React.createClass({
   render() {
     return(
-      <img src="http://chicagoelectricpiano.com/wp-content/uploads/2014/01/2014-01-21-09.03.56.jpg" alt="bannerimg" />
+      <div className="banner">
+        <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_logo.png?raw=true" height="50%" width="50%" />
+      </div>
     )
   }
 })

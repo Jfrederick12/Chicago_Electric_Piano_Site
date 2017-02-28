@@ -22,6 +22,20 @@
   padding: 10px;
 }
 
+.banner {
+  background: url(https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true) no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
 a {
   overflow: hidden;
   font-size: 16px;
