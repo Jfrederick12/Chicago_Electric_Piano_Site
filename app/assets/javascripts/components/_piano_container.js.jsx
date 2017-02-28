@@ -11,7 +11,3 @@ const PianoContainer = React.createClass({
     )
   }
 })
-
-        // <h3>{piano.make}</h3>
-        // <p>{piano.model}</p>
-        // <p>{piano.description}</p>
