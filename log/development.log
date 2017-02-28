@@ -6332,3 +6332,16 @@ Processing by Api::V1::PianosController#index as JSON
 Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2017-02-28 14:40:08 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1574ms (Views: 1572.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-02-28 14:40:10 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 38ms (Views: 29.7ms | ActiveRecord: 1.2ms)
+
+
