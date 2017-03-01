@@ -18,11 +18,7 @@ const PianosList = React.createClass({
     const fenderPianos = this.state.pianos.filter((piano) => {
       return piano.make === make
     });
-    this.setState({ searchPianos: fenderPianos })
-  },
-
-  panelClick() {
-    alert('click worked')
+    this.setState({ searchPianos: fenderPianos, open: !this.state.open })
   },
 
   render() {
@@ -70,14 +66,14 @@ const PianosList = React.createClass({
                  <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
                 <div className="button-1">
                   <div className="eff-1"></div>
-                  <a onClick={() => this.handleClick('Fender Rhodes')}>Clavinet</a>
+                  <a onClick={() => this.handleClick('Wurlitzer')}>Clavinet</a>
                 </div>
               </div>
+                <Panel >
+                  {pianos}
+                </Panel>
             </div>
           </Jumbotron>
-        <div className="piano-list-container">
-          { pianos }
-        </div>
       </div>
     )
   }
