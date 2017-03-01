@@ -29,6 +29,14 @@ const PianosList = React.createClass({
     const Panel = ReactBootstrap.Panel;
     const Jumbotron = ReactBootstrap.Jumbotron;
     // End of Assets
+    const oldArray = [1, 2, 3, 4, 5];
+    const newArray = [];
+    const ranger = () => {
+      for (var i = 0; i < 3; i++); {
+        newArray.push(oldArray[i])
+      }
+      return newArray;
+    }
 
     const pianos = this.state.searchPianos.map((piano) => {
       return (
@@ -43,38 +51,36 @@ const PianosList = React.createClass({
     });
 
     return(
-      <div>
-          <Jumbotron className="jumbo">
-            <h1>Browse our selection!</h1>
-            <p className="border-divider">We take pride in our work while offering a wide variety of electric pianos. Blah blah blah, more content would fill in here.</p>
-            <div className="select-options">
-              <div className="piano-select-container border-divider">
-                <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
-                <div className="button-1">
-                  <div className="eff-1"></div>
-                  <a onClick={() => this.handleClick('Fender Rhodes')}>Fender Rhodes</a>
-                </div>
+        <Jumbotron className="jumbo">
+          <h1>Browse our selection!</h1>
+          <p className="border-divider">We take pride in our work while offering a wide variety of electric pianos. Blah blah blah, more content would fill in here.</p>
+          <div className="select-options">
+            <div className="piano-select-container">
+              <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
+              <div className="button-1">
+                <div className="eff-1"></div>
+                <a onClick={() => this.handleClick('Fender Rhodes')}>Fender Rhodes</a>
               </div>
-              <div className="piano-select-container border-divider">
-                 <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
-                <div className="button-1">
-                  <div className="eff-1"></div>
-                  <a onClick={() => this.handleClick('Wurlitzer')}>Wurlitzer</a>
-                </div>
-              </div>
-              <div className="piano-select-container border-divider">
-                 <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
-                <div className="button-1">
-                  <div className="eff-1"></div>
-                  <a onClick={() => this.handleClick('Wurlitzer')}>Clavinet</a>
-                </div>
-              </div>
-                <Panel >
-                  {pianos}
-                </Panel>
             </div>
-          </Jumbotron>
-      </div>
+            <div className="piano-select-container">
+               <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
+              <div className="button-1">
+                <div className="eff-1"></div>
+                <a onClick={() => this.handleClick('Wurlitzer')}>Wurlitzer</a>
+              </div>
+            </div>
+            <div className="piano-select-container">
+               <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
+              <div className="button-1">
+                <div className="eff-1"></div>
+                <a onClick={() => this.handleClick('Wurlitzer')}>Clavinet</a>
+              </div>
+            </div>
+              <Panel >
+                { pianos }
+              </Panel>
+          </div>
+        </Jumbotron>
     )
   }
 })

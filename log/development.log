@@ -9572,3 +9572,1545 @@ Processing by Api::V1::PianosController#index as JSON
 Completed 200 OK in 19ms (Views: 13.2ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for ::1 at 2017-02-28 21:37:41 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 1688ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (33:49)
+  31 |     // End of Assets
+  32 | 
+> 33 |     const pianos = this.state.searchPianos.map[0..3]((piano) => {
+     |                                                  ^
+  34 |       return (
+  35 |         <container key={piano.id}>
+  36 |           <a>):
+    4:     <title>CepcoSite</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1364717615275489710_70260666295160'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.8ms)
+Started GET "/" for ::1 at 2017-02-28 21:38:21 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1199ms (Views: 1197.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-28 21:39:24 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1019ms (Views: 1017.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-28 21:42:01 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1031ms (Views: 1029.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-28 21:42:16 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 122ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-02-28 21:42:16 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.5ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 27ms (Views: 18.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-28 21:44:49 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 96ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-02-28 21:44:50 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.5ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 29ms (Views: 22.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-02-28 21:46:59 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 824ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Line 33: "i" is read-only
+  31 |     // End of Assets
+  32 |     const filteredPianos = () => {
+> 33 |       for (const i = 0; i < 5; i ++) {
+     |                                ^
+  34 | 
+  35 |       }
+  36 |     }):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260697713840'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.5ms)
+Started GET "/" for ::1 at 2017-02-28 21:47:21 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 772ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Line 32: "i" is read-only
+  30 |     const Jumbotron = ReactBootstrap.Jumbotron;
+  31 |     // End of Assets
+> 32 |       for (const i = 0; i < 5; i ++) {
+     |                                ^
+  33 | 
+  34 |       }
+  35 | ):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260712003840'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.3ms)
+Started GET "/" for ::1 at 2017-02-28 21:51:33 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1666ms (Views: 1663.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-02-28 21:51:35 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 26ms (Views: 18.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-02-28 21:52:58 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1044ms (Views: 1041.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-02-28 21:52:59 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 33ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-28 21:54:02 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 74ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-02-28 21:54:03 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 02:16:28 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 91ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 02:16:28 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 29ms (Views: 22.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:36:18 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1330ms (Views: 1326.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:36:19 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (1.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 55ms (Views: 43.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:37:37 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 206ms (Views: 202.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:37:37 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:38:48 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 98ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:38:48 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:39:06 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 93ms (Views: 90.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:39:06 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:39:51 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:39:51 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:41:05 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:41:06 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:41:45 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 107ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:41:46 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.6ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:42:32 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 77ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:42:33 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:43:43 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:43:43 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.9ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:44:31 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 86ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:44:31 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:44:52 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 116ms (Views: 112.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:44:52 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:45:10 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 88ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:45:10 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:47:36 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 117ms (Views: 114.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:47:36 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:48:06 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 141ms (Views: 138.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:48:06 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:48:21 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 103ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:48:21 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:48:31 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 115ms (Views: 113.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:48:32 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:58:40 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 102ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:58:41 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:58:56 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 97ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:58:56 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:59:17 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 106ms (Views: 103.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:59:17 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 11:59:44 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1083ms (Views: 1080.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 11:59:46 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 14.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:00:43 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 115ms (Views: 112.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:00:43 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (1.7ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:01:11 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 117ms (Views: 113.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:01:11 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:01:39 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 106ms (Views: 102.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:01:39 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:02:17 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:02:17 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:03:00 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 84ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:03:00 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:04:06 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1008ms (Views: 1006.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:04:08 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:04:19 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1026ms (Views: 1024.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:04:20 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 24ms (Views: 16.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:04:49 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 980ms (Views: 978.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:04:51 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 14.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:06:26 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 947ms (Views: 944.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:06:27 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 23ms (Views: 16.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:06:41 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1121ms (Views: 1118.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:06:42 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 20ms (Views: 13.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:07:10 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:07:10 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 18ms (Views: 12.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:08:47 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 704ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (2:10)
+  1 | const bootstrapData = {
+> 2 |     const Grid = ReactBootstrap.Grid,
+    |           ^
+  3 |     const Row = ReactBootstrap.Row,
+  4 |     const Col = ReactBootstrap.Col,
+  5 |     const Panel = ReactBootstrap.Panel,):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260709506980'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.0ms)
+Started GET "/" for ::1 at 2017-03-01 12:09:03 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 671ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (2:4)
+  1 | const bootstrapData = [
+> 2 |     const Grid = ReactBootstrap.Grid,
+    |     ^
+  3 |     const Row = ReactBootstrap.Row,
+  4 |     const Col = ReactBootstrap.Col,
+  5 |     const Panel = ReactBootstrap.Panel,):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260697178280'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.6ms)
+Started GET "/" for ::1 at 2017-03-01 12:11:11 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1614ms (Views: 1611.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:11:13 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 25ms (Views: 18.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:13:38 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 994ms (Views: 992.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:13:39 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (1.0ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 27ms (Views: 20.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:14:15 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 978ms (Views: 975.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:14:17 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.8ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 30ms (Views: 20.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:15:19 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 931ms (Views: 928.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:15:20 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 23ms (Views: 16.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:16:06 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1015ms (Views: 1011.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:16:07 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:19:00 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 978ms (Views: 974.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:19:01 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.6ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 28ms (Views: 20.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:19:21 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 991ms (Views: 987.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:19:23 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 28ms (Views: 20.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:28:13 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 164ms (Views: 162.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:28:14 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:28:40 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 92ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:28:40 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:28:58 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 118ms (Views: 115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:28:58 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:29:33 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1020ms (Views: 1017.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:29:35 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:30:14 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1000ms (Views: 997.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:30:15 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 23ms (Views: 16.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:30:24 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 92ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:30:25 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 24ms (Views: 18.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:30:54 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1007ms (Views: 1003.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:30:55 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.5ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 30ms (Views: 22.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:31:16 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1004ms (Views: 1001.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:31:17 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 26ms (Views: 19.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:31:39 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 995ms (Views: 991.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:31:40 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.6ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 39ms (Views: 29.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:32:21 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1130ms (Views: 1127.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:32:22 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 22ms (Views: 15.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:32:43 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 962ms (Views: 960.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:32:44 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:33:55 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 934ms (Views: 930.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:33:56 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 14.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:34:34 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1096ms (Views: 1094.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:34:35 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.6ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 31ms (Views: 20.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:35:53 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 999ms (Views: 996.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:35:54 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 22ms (Views: 14.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:36:11 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 967ms (Views: 963.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:36:12 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 14.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:36:37 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1016ms (Views: 1012.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:36:39 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.5ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 26ms (Views: 18.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:36:55 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1018ms (Views: 1016.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:36:56 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.8ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 29ms (Views: 21.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:37:35 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 999ms (Views: 996.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:37:37 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.7ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 27ms (Views: 18.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:44:16 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1039ms (Views: 1036.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:44:17 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 19ms (Views: 13.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:45:33 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 675ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (16:21)
+  14 |     // const piano = this.props
+  15 |     return(
+> 16 |       <div onClick={ const selectedPiano = piano}>
+     |                      ^
+  17 |         <img src={piano.photo} alt={piano.model} />
+  18 |         <figcaption>{piano.model}, {piano.year}</figcaption>
+  19 |         { selectedPiano }):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260695140160'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (21.0ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.1ms)
+Started GET "/" for ::1 at 2017-03-01 12:45:43 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 988ms (Views: 985.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:45:45 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 14.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:46:00 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1000ms (Views: 997.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:46:02 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 14.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:51:21 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1863ms (Views: 1861.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:51:23 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.6ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 23ms (Views: 15.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:52:17 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 932ms (Views: 930.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:52:18 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.8ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 23ms (Views: 15.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:52:47 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1032ms (Views: 1027.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:52:49 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (1.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 14.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 12:56:49 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 706ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (33:23)
+  31 |         <figcaption>{piano.model}, {piano.year}</figcaption>
+  32 |         <Modal show={this.state.showModal} onHide={this.close}>
+> 33 |           { PianoModal piano={piano} /}
+     |                        ^
+  34 |         </Modal>
+  35 |       </div>
+  36 |     )):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260711602020'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.5ms)
+Started GET "/" for ::1 at 2017-03-01 12:57:48 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 690ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (33:23)
+  31 |         <figcaption>{piano.model}, {piano.year}</figcaption>
+  32 |         <Modal show={this.state.showModal} onHide={this.close}>
+> 33 |           { PianoModal piano={this.piano} /}
+     |                        ^
+  34 |         </Modal>
+  35 |       </div>
+  36 |     )):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260708946420'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.4ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.2ms)
+Started GET "/" for ::1 at 2017-03-01 12:58:03 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 708ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (33:23)
+  31 |         <figcaption>{piano.model}, {piano.year}</figcaption>
+  32 |         <Modal show={this.state.showModal} onHide={this.close}>
+> 33 |           { PianoModal piano={this.props.piano} /}
+     |                        ^
+  34 |         </Modal>
+  35 |       </div>
+  36 |     )):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260638677820'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.1ms)
+Started GET "/" for ::1 at 2017-03-01 12:58:11 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 732ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (33:23)
+  31 |         <figcaption>{piano.model}, {piano.year}</figcaption>
+  32 |         <Modal show={this.state.showModal} onHide={this.close}>
+> 33 |           { PianoModal this.props.piano={this.props.piano} /}
+     |                        ^
+  34 |         </Modal>
+  35 |       </div>
+  36 |     )):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260695550200'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.8ms)
+Started GET "/" for ::1 at 2017-03-01 12:58:32 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 936ms (Views: 933.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 12:58:33 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.7ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 37ms (Views: 29.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 13:02:13 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 942ms (Views: 938.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 13:02:14 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 13:04:39 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 713ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (35:25)
+  33 |           <Modal.Body>
+  34 |             <p>{piano.model}</p>
+> 35 |             { PianoModal piano={piano}}
+     |                          ^
+  36 |           </Modal.Body>
+  37 |         </Modal>
+  38 |       </div>):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260715687860'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.8ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.4ms)
+Started GET "/" for ::1 at 2017-03-01 13:04:52 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 693ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (35:25)
+  33 |           <Modal.Body>
+  34 |             <p>{piano.model}</p>
+> 35 |             { PianoModal {...piano}}
+     |                          ^
+  36 |           </Modal.Body>
+  37 |         </Modal>
+  38 |       </div>):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260652059700'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.1ms)
+Started GET "/" for ::1 at 2017-03-01 13:05:30 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1929ms (Views: 1927.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 13:05:32 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.6ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 31ms (Views: 21.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 13:05:45 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1017ms (Views: 1013.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 13:05:47 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.6ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 13:07:27 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 1382ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Adjacent JSX elements must be wrapped in an enclosing tag (3:2)
+  1 | const PianoModal = (props) => (
+  2 |   <h1>{props.make}, {props.model}</h1>
+> 3 |   <img src={props.url} />
+    |   ^
+  4 |   <p>{props.description}</p>
+  5 | )
+  6 | ):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260688596440'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.1ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.2ms)
+Started GET "/" for ::1 at 2017-03-01 13:09:03 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 715ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Adjacent JSX elements must be wrapped in an enclosing tag (4:2)
+  2 |   <h1>{props.make}, {props.model}</h1>
+  3 | 
+> 4 |   <p>{props.description}</p>
+    |   ^
+  5 | )
+  6 | 
+  7 | ):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260661128680'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.4ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.2ms)
+Started GET "/" for ::1 at 2017-03-01 13:09:22 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 718ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Adjacent JSX elements must be wrapped in an enclosing tag (3:2)
+  1 | const PianoModal = (props) => (
+  2 |   <h1>{props.make}{props.model}</h1>
+> 3 |   <img src={props.url} />
+    |   ^
+  4 |   <p>{props.description}</p>
+  5 | )
+  6 | ):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1364717615275489710_70260641510360'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.6ms)
+Started GET "/" for ::1 at 2017-03-01 13:09:32 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 955ms (Views: 951.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 13:09:33 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.5ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 14.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 13:09:55 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 969ms (Views: 966.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 13:09:56 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 13:10:39 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 921ms (Views: 918.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 13:10:40 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 13:10:57 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 943ms (Views: 940.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 13:10:58 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 13:11:13 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 941ms (Views: 938.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 13:11:14 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 13:12:19 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 991ms (Views: 988.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 13:12:20 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 13:12:44 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 986ms (Views: 982.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 13:12:45 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
