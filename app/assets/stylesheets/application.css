@@ -15,20 +15,27 @@
  *= require_self
  */
 
+ @import url(http://fonts.googleapis.com/css?family=Roboto|Questrial:400,100,900);
+
+ html {
+
+ }
+
 .piano-list-container {
   text-align: center;
   left: 20%;
   right: 20%;
   padding: 10px;
+  /*height: 100vh;*/
 }
 
 .banner {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_bg2.jpg?raw=true");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -46,6 +53,7 @@
 }
 
 a {
+  cursor: pointer;
   overflow: hidden;
   font-size: 16px;
   display: inline-block;
@@ -75,39 +83,164 @@ a:nth-of-type(2n) {
 }
 
 a:hover img {
-  transform: scale(1.15);
+  overflow: hidden;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  /*transform: scale(1.15);*/
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 figure {
   margin: 0;
-  overflow: hidden;
+}
+
+figure div {
+  text-align: center;
 }
 
 figcaption {
-  margin-top: 15px;
+  font-family: 'Questrial', sans-serif;
+  margin-top: 3px;
+}
+
+figcaption:hover {
+  text-decoration: none;
 }
 
 img {
-  overflow: hidden;
   border: none;
   max-width: 100%;
   height: auto;
   display: block;
   background: #ccc;
-  transition: transform .2s ease-in-out;
+  -webkit-transform: scale(1);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
-.p a {
+/*.p a {
   display: inline;
   font-size: 13px;
   margin: 0;
-  text-decoration: underline;
-  color: blue;
 }
 
 .p {
   text-align: center;
   font-size: 13px;
   padding-top: 50px;
+}*/
+
+/*.piano-select-tray {
+  height: 100vh;
+  background-color: #e6cf8b;
+}*/
+
+/*.piano-select-tray .container {
+  padding-top: 8%;
+  padding-bottom: 15%;
+}*/
+
+/*.piano-select-tray img{
+  display: block;
+  position: relative;
+  background: transparent;
+}*/
+
+
+.jumbo {
+  display: block;
+  padding: 20px;
+  height: 100vh;
+  /*background-color: #e6cf8b;*/
 }
 
+.jumbo h1 {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.jumbo p {
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+.select-options {
+  text-align: center;
+  float: center;
+}
+
+.piano-select-container {
+  background: transparent;
+  padding: 20px 20px 0px 20px;
+  width: 20%;
+  display: inline-block;
+}
+
+.piano-select-container img {
+  background: transparent;
+  padding-bottom: 10px;
+}
+
+.button-1{
+  width:100%;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+}
+
+.button-1 a{
+  width: 100%;
+  font-family: 'Questrial', sans-serif;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+
+.eff-1{
+  width:100%;
+  height:50px;
+  top:-2px;
+  right: 100%;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+
+.button-1:hover .eff-1{
+  right:0;
+}
+
+.button-1:hover a{
+  color:#fff;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+
+.border-divider {
+  border-bottom: 1px solid gray;
+}
