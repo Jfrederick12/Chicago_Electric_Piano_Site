@@ -16,7 +16,7 @@ const PianoContainer = React.createClass({
 
   handleClick(piano) {
     const selectedPiano = piano;
-    console.log(selectedPiano)
+    console.log(selectedPiano.detail_photos)
     this.setState({ showModal: true });
   },
 

@@ -11114,3 +11114,935 @@ Processing by Api::V1::PianosController#index as JSON
 Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2017-03-01 13:15:28 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 813ms (Views: 802.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 13:15:30 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 23ms (Views: 14.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 14:56:10 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1571ms (Views: 1568.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 14:56:22 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 20ms (Views: 13.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 14:56:37 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 816ms (Views: 806.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 14:56:38 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.9ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 25ms (Views: 16.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 14:59:23 -0600
+Started GET "/" for ::1 at 2017-03-01 14:59:33 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 1237ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (15:2)
+  13 |     return(
+  14 |     )
+> 15 |   }
+     |   ^
+  16 | })
+  17 | ):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___3836699813771537208_70297907021640'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.4ms)
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 653ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (15:2)
+  13 |     return(
+  14 |     )
+> 15 |   }
+     |   ^
+  16 | })
+  17 | ):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___3836699813771537208_70297907021640'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.0ms)
+Started GET "/" for ::1 at 2017-03-01 14:59:46 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 937ms (Views: 934.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 14:59:48 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 23ms (Views: 15.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 15:00:03 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 979ms (Views: 977.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 15:00:05 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 14.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 15:00:41 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 983ms (Views: 981.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 15:00:42 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.6ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 36ms (Views: 27.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 15:01:38 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1041ms (Views: 1038.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 15:01:40 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.5ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 29ms (Views: 20.9ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePhotos (20170301211938)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "piano_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170301211938"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mPiano Load (1.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" WHERE "pianos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "photos" ("name", "description", "piano_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "cheekblock"], ["description", "detailed cheekblocks, rosey red cheeks"], ["piano_id", 1], ["created_at", 2017-03-01 21:23:16 UTC], ["updated_at", 2017-03-01 21:23:16 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" ORDER BY "pianos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPiano Load (0.1ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" WHERE "pianos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "photos" ("name", "description", "piano_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "key detail"], ["description", "Total key inversion"], ["piano_id", 1], ["created_at", 2017-03-01 21:24:25 UTC], ["updated_at", 2017-03-01 21:24:25 UTC]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "piano_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "pianos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "year" integer, "description" varchar, "photo" varchar, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170301211938')[0m
+  [1m[35m (0.4ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170224223739');
+
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-01 21:26:37 UTC], ["updated_at", 2017-03-01 21:26:37 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "piano_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "pianos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "year" integer, "description" varchar, "photo" varchar, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170301211938')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170224223739');
+
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-01 21:26:37 UTC], ["updated_at", 2017-03-01 21:26:37 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1973], ["description", "Porro id animi non illo laudantium."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1969], ["description", "Facilis iste consequuntur eligendi dolorem illo nihil voluptate."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark III"], ["year", 1970], ["description", "Voluptatum ducimus nulla expedita est cupiditate doloremque."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1970], ["description", "Qui in doloribus qui ipsa iste."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1972], ["description", "Excepturi nesciunt asperiores quaerat soluta in."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1969], ["description", "Rerum saepe ab quia minima."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1975], ["description", "Et et eum animi temporibus voluptates."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1974], ["description", "Repudiandae dolor sit modi aut temporibus."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1972], ["description", "Et cupiditate quia enim."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1973], ["description", "Omnis ut dolorum sunt harum id quis et."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1970], ["description", "Qui necessitatibus eveniet illo."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1965], ["description", "Rerum qui placeat ducimus voluptatem amet quam."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1975], ["description", "Consequatur nam culpa aperiam quisquam eligendi sit vel."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1970], ["description", "Ducimus non voluptatem temporibus sit."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 210"], ["year", 1965], ["description", "Est alias maxime quo."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1970], ["description", "Praesentium inventore qui laboriosam sit a asperiores."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 106"], ["year", 1966], ["description", "In pariatur molestiae aut."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1969], ["description", "Eum soluta accusantium debitis vero neque nesciunt dolore labore."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1966], ["description", "Veritatis cum iusto reiciendis."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1973], ["description", "Quaerat et sed aut ducimus optio odit."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:26:38 UTC], ["updated_at", 2017-03-01 21:26:38 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2017-03-01 15:26:56 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 2169ms (Views: 2157.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 15:26:59 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 45ms (Views: 30.6ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "piano_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "pianos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "year" integer, "description" varchar, "photo" varchar, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170301211938')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (8.1ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170224223739');
+
+[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-01 21:29:28 UTC], ["updated_at", 2017-03-01 21:29:28 UTC]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "piano_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (25.1ms)[0m  [1m[35mCREATE TABLE "pianos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "year" integer, "description" varchar, "photo" varchar, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (18.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (21.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170301211938')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (11.2ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170224223739');
+
+[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-01 21:29:28 UTC], ["updated_at", 2017-03-01 21:29:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1970], ["description", "Nemo est excepturi rerum."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark III"], ["year", 1971], ["description", "Aut eveniet reprehenderit dolore sint omnis modi sit."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1975], ["description", "Accusamus nostrum quas et id blanditiis sapiente animi."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1972], ["description", "Placeat omnis qui pariatur voluptatem qui ut hic est."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1971], ["description", "Qui soluta occaecati nisi ipsam."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1969], ["description", "Assumenda accusamus distinctio facere harum quia sit veritatis."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark III"], ["year", 1970], ["description", "Voluptatem sit et sit et accusamus asperiores sed."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1974], ["description", "Aliquid quibusdam explicabo reprehenderit."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1971], ["description", "Eum sint mollitia aut quia officia ea."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1973], ["description", "Ipsam provident et deleniti commodi aut sit."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 106"], ["year", 1970], ["description", "Qui velit itaque suscipit nihil repellat deserunt sit ut."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1975], ["description", "Et quas maxime quo omnis commodi et dicta dolore."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 106"], ["year", 1966], ["description", "Aliquid dicta porro aut aut sint voluptas explicabo."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1975], ["description", "Omnis aut vitae error et culpa."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1975], ["description", "Similique iusto occaecati recusandae."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 210"], ["year", 1969], ["description", "Voluptatem numquam necessitatibus atque fugiat."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 106"], ["year", 1972], ["description", "Neque soluta deleniti dolores."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1965], ["description", "Nobis quia dolores temporibus enim nulla."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1974], ["description", "Omnis molestias minima autem et vel dolorem ducimus explicabo."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1966], ["description", "Unde cupiditate amet qui dolore itaque."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:29:29 UTC], ["updated_at", 2017-03-01 21:29:29 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for ::1 at 2017-03-01 15:32:12 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 512ms (Views: 500.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 15:32:13 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 28ms (Views: 16.8ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mPiano Load (1.9ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[36mPiano Load (1.8ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "photos" ("name", "description", "piano_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "this"], ["description", "that"], ["piano_id", 1], ["created_at", 2017-03-01 21:36:30 UTC], ["updated_at", 2017-03-01 21:36:30 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" ORDER BY "pianos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 1]]
+  [1m[36mPhoto Load (1.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "piano_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "pianos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "year" integer, "description" varchar, "photo" varchar, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170301211938')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170224223739');
+
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-01 21:40:21 UTC], ["updated_at", 2017-03-01 21:40:21 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "piano_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "pianos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "year" integer, "description" varchar, "photo" varchar, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170301211938')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170224223739');
+
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-01 21:40:21 UTC], ["updated_at", 2017-03-01 21:40:21 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUrlToPhotos (20170301213836)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "photos" ADD "url" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170301213836"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "photos" ("name", "description", "piano_id", "created_at", "updated_at", "url") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "this"], ["description", "that"], ["piano_id", 1], ["created_at", 2017-03-01 21:40:59 UTC], ["updated_at", 2017-03-01 21:40:59 UTC], ["url", "this again"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" ORDER BY "pianos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1969], ["description", "Eligendi aut dolorum et quam fuga reprehenderit."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1971], ["description", "Dolor corrupti aut cum et modi."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1971], ["description", "Reprehenderit exercitationem deleniti eligendi."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark III"], ["year", 1970], ["description", "Qui illo laboriosam culpa."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1975], ["description", "Aspernatur sit odio nobis praesentium minus."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1972], ["description", "Voluptatibus ut ut inventore."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1975], ["description", "Dolorem quod minus laudantium suscipit sint tempore."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1969], ["description", "Est fuga unde laudantium."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1970], ["description", "Adipisci molestiae et iusto autem consequatur."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1975], ["description", "Eum voluptatem voluptatem sit numquam porro ut."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1968], ["description", "Aut quas velit aut saepe rerum enim."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 210"], ["year", 1966], ["description", "Corrupti est incidunt praesentium hic."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1973], ["description", "Corrupti non qui impedit quis adipisci."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1973], ["description", "Velit sed alias enim voluptatem magni placeat at."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1970], ["description", "Error dolore cupiditate dolor ut adipisci dolor blanditiis."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1969], ["description", "Expedita id eos qui quod nesciunt non nam dignissimos."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 210"], ["year", 1968], ["description", "Et qui voluptas deleniti labore."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 210"], ["year", 1972], ["description", "Omnis praesentium nisi ex sed."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1968], ["description", "Consequatur molestiae incidunt voluptatem unde et nisi."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 106"], ["year", 1967], ["description", "Ut nisi neque praesentium vel reprehenderit quae autem."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:41:23 UTC], ["updated_at", 2017-03-01 21:41:23 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPiano Load (1.5ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" ORDER BY "pianos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "piano_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "url" varchar)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "pianos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "year" integer, "description" varchar, "photo" varchar, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170301213836')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170224223739'),
+('20170301211938');
+
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "piano_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "url" varchar)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "pianos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "year" integer, "description" varchar, "photo" varchar, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170301213836')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170224223739'),
+('20170301211938');
+
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1973], ["description", "This Fender Rhodes is from 1973, right in the heart of the early Fender Rhodes production period. We restored the piano with our “Rebirth” level of restoration services, virtually rebuilding the piano from scratch. Throughout the process we leveled the key bed and set the proper black key height, replaced all action felts and aging rubber components such as the grommets and hammer tips. Our goal was to keep the sound of the Rhodes as true to the sound of the 1973 production period by using only period-correct vintage parts and top quality reproduction parts that bring out the early Rhodes’ signature sound."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4876-800x600.jpg"], ["price", 4000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1969], ["description", "In quisquam libero cum autem molestiae voluptatem impedit explicabo."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark III"], ["year", 1971], ["description", "Non atque et ipsam id."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark III"], ["year", 1975], ["description", "Veniam voluptas neque sed dolor et."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark III"], ["year", 1974], ["description", "Occaecati velit ipsum quis natus."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark II"], ["year", 1972], ["description", "Officia veritatis inventore quibusdam facere."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark III"], ["year", 1972], ["description", "Qui odit sed non ducimus qui omnis voluptatum ipsam."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark III"], ["year", 1973], ["description", "Sit voluptatem nam et ipsam amet aut totam."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1974], ["description", "Accusamus ex qui expedita consequatur dolor molestiae quia mollitia."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Fender Rhodes"], ["model", "Mark I"], ["year", 1975], ["description", "Cumque officia voluptatibus itaque."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4570-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1975], ["description", "Et cum aut nihil id."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 2000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1975], ["description", "Itaque eligendi beatae natus voluptatibus."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 106"], ["year", 1973], ["description", "Doloribus eos aut consectetur nam accusamus labore."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1974], ["description", "Ipsam totam et placeat numquam."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 106"], ["year", 1972], ["description", "Praesentium enim quae neque."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 206A"], ["year", 1970], ["description", "Maxime et necessitatibus sed culpa."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 210"], ["year", 1975], ["description", "Sint quia officia corrupti harum."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 5000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 210"], ["year", 1970], ["description", "Veritatis eos accusantium minus molestiae aut."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3000], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 106"], ["year", 1974], ["description", "Ducimus quasi ea quia dignissimos non praesentium et saepe."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 1500], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pianos" ("make", "model", "year", "description", "photo", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Wurlitzer"], ["model", "Model 207"], ["year", 1974], ["description", "Quaerat eaque est et."], ["photo", "http://chicagoelectricpiano.com/wp-content/uploads/2016/10/IMG_4192-600x450.jpg"], ["price", 3500], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("name", "description", "piano_id", "created_at", "updated_at", "url") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "side view"], ["description", "detailed view capturing the side angle"], ["piano_id", 1], ["created_at", 2017-03-01 21:46:52 UTC], ["updated_at", 2017-03-01 21:46:52 UTC], ["url", "http://chicagoelectricpiano.com/wp-content/uploads/2017/02/IMG_4888-800x600.jpg"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPhoto Load (1.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" ORDER BY "pianos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 1]]
+Started GET "/" for ::1 at 2017-03-01 15:52:31 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 510ms (Views: 497.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 15:52:32 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 26ms (Views: 13.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 15:53:58 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 85ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 15:53:59 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.7ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 45ms (Views: 25.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:01:31 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 2344ms (Views: 2333.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:01:34 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (1.1ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 48ms (Views: 31.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:01:47 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1071ms (Views: 1068.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:01:48 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 34ms (Views: 18.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:01:56 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1028ms (Views: 1026.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:01:57 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 29ms (Views: 17.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:02:05 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1032ms (Views: 1028.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:02:06 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 23ms (Views: 15.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:02:12 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1014ms (Views: 1011.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:02:13 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 14.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:02:44 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 721ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (54:14)
+  52 | 
+  53 |     return(
+> 54 |       {console.log('derp')}
+     |               ^
+  55 |         <Jumbotron className="jumbo">
+  56 |           <h1>Browse our selection!</h1>
+  57 |           <p className="border-divider">We take pride in our work while offering a wide variety of electric pianos. Blah blah blah, more content would fill in here.</p>):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1352117723962807709_70097582458400'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (20.5ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.6ms)
+Started GET "/" for ::1 at 2017-03-01 16:02:51 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 725ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (55:19)
+  53 |     return(
+  54 |       console.log('derp')
+> 55 |         <Jumbotron className="jumbo">
+     |                    ^
+  56 |           <h1>Browse our selection!</h1>
+  57 |           <p className="border-divider">We take pride in our work while offering a wide variety of electric pianos. Blah blah blah, more content would fill in here.</p>
+  58 |           <div className="select-options">):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1352117723962807709_70097566146240'
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.5ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/carlydyer/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.8ms)
+Started GET "/" for ::1 at 2017-03-01 16:03:00 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1023ms (Views: 1021.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:03:01 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.5ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:03:38 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1086ms (Views: 1083.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:03:39 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.6ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 27ms (Views: 17.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:03:48 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1142ms (Views: 1140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:05:27 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 70ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:05:28 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.7ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 50ms (Views: 33.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:05:38 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:05:38 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.5ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 29ms (Views: 18.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:06:35 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 273ms (Views: 271.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:06:36 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 25ms (Views: 17.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:06:47 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1038ms (Views: 1036.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:06:49 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 27ms (Views: 18.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-01 16:07:01 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 77ms (Views: 74.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-01 16:07:01 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mPiano Load (0.4ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" ORDER BY "pianos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 1]]

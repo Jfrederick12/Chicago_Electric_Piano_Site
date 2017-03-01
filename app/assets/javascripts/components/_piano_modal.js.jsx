@@ -1,9 +1,16 @@
-const PianoModal = (props) => (
-  <container>
-    <h1>{props.make}{props.model}</h1>
-    <img src={props.photo} />
-    <p>{props.description}</p>
-  </container>
+const PianoModal = React.createClass({
+  getInitialState() {
+    return {
 
-)
+    };
+  },
 
+  render() {
+    const piano = this.props;
+    return(
+      <div>
+        <h1>{piano.model}</h1>
+      </div>
+    )
+  }
+})
