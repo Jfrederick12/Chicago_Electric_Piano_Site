@@ -23276,3 +23276,35 @@ Processing by Api::V1::PianosController#find_photos as JSON
 Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/api/v1/pianos/1/find_photo.json" for ::1 at 2017-03-02 02:18:04 -0600
+Processing by Api::V1::PianosController#find_photos as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" WHERE "pianos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 1]]
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/pianos/1/find_photo.json" for ::1 at 2017-03-02 02:46:53 -0600
+Processing by Api::V1::PianosController#find_photos as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" WHERE "pianos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 1]]
+Completed 200 OK in 9ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/pianos/1/find_photo.json" for ::1 at 2017-03-02 16:03:14 -0600
+Processing by Api::V1::PianosController#find_photos as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPiano Load (1.9ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" WHERE "pianos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 1]]
+Completed 200 OK in 35ms (Views: 7.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/v1/pianos/1/find_photo.json" for ::1 at 2017-03-02 16:03:16 -0600
+Processing by Api::V1::PianosController#find_photos as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPiano Load (0.1ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" WHERE "pianos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 1]]
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
