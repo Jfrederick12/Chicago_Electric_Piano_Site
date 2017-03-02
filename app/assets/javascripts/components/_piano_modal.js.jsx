@@ -7,7 +7,7 @@ const PianoModal = React.createClass({
   },
 
   componentDidMount() {
-    $.getJSON('/api/v1/pianos/' + this.props.id + '/find_photo.json', (response) => {
+    $.getJSON(`/api/v1/pianos/${this.props.id}/find_photo.json`, (response) => {
       this.setState({
         detailPhotos: response
       })
@@ -19,7 +19,6 @@ const PianoModal = React.createClass({
   },
 
   render() {
-    console.log(this.state.detailPhotos)
     const piano = this.props;
     const photos = this.state.detailPhotos
     return(
@@ -28,10 +27,14 @@ const PianoModal = React.createClass({
         <img src={this.state.currentPhoto} />
           { photos.map((photo) => {
             return (
-            <img onClick={this.selectPhoto.bind(this, photo)} src={photo.url} height="25%" width="25%" />
-            )
-          }
-        )}
+              <div className="photo-detail">
+                <figure>
+                  <img onClick={this.selectPhoto.bind(this, photo)} src={photo.url} height="100%" width="100%" />
+                </figure>
+              </div>
+              )
+            }
+          )}
       </div>
     )
   }

@@ -16,13 +16,11 @@ const PianoContainer = React.createClass({
 
   handleClick(piano) {
     const selectedPiano = piano;
-    console.log(selectedPiano.detail_photos)
     this.setState({ showModal: true });
   },
 
   render() {
     const piano = this.props.piano;
-    const Button = ReactBootstrap.Button;
     const Modal = ReactBootstrap.Modal;
     // const piano = this.props
     return(

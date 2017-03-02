@@ -52,6 +52,43 @@
   background: transparent;
 }
 
+.photo-detail {
+  padding-top: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(80% - 4px);
+  margin-right: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 40em) {
+  .photo-detail {
+    width: calc(25% - 6px);
+  }
+
+  .photo-detail:nth-of-type(2n) {
+    margin-right: 5px;
+  }
+
+  .photo-detail:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+.photo-detail:hover img {
+  overflow: hidden;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.photo-detail:hover {
+  text-decoration: none;
+}
+
 a {
   cursor: pointer;
   overflow: hidden;
