@@ -28,9 +28,7 @@ const PianoContainer = React.createClass({
         <img src={piano.photo} alt={piano.model} />
         <figcaption>{piano.model}, {piano.year}</figcaption>
         <Modal show={this.state.showModal} onHide={this.close}>
-          <Modal.Body>
             < PianoModal {...piano} />
-          </Modal.Body>
         </Modal>
       </div>
     )
