@@ -20,6 +20,12 @@ class Api::V1::PianosController < ApplicationController
     respond_with piano, json: piano
   end
 
+  def find_photos
+    piano = Piano.find(params[:id])
+    photo = piano.detail_photos
+    respond_with photo, json: photo
+  end
+
   private
 
   def piano_params
