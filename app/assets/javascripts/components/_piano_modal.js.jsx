@@ -7,7 +7,7 @@ const PianoModal = React.createClass({
   },
 
   componentDidMount() {
-    $.getJSON('/api/v1/pianos/' + this.props.id + '/find_photo.json', (response) => {
+    $.getJSON(`/api/v1/pianos/${this.props.id}/find_photo.json`, (response) => {
       this.setState({
         detailPhotos: response
       })
@@ -19,20 +19,32 @@ const PianoModal = React.createClass({
   },
 
   render() {
-    console.log(this.state.detailPhotos)
     const piano = this.props;
-    const photos = this.state.detailPhotos
+    const photos = this.state.detailPhotos;
+    const Modal = ReactBootstrap.Modal;
+
+    // want to find a way to pass the photo to a child component
     return(
       <div>
-        <h1>{piano.model}</h1>
-        <img src={this.state.currentPhoto} />
-          { photos.map((photo) => {
-            return (
-            <img onClick={this.selectPhoto.bind(this, photo)} src={photo.url} height="25%" width="25%" />
-            )
-          }
-        )}
+        <Modal.Header closeButton>
+          <Modal.Title>{piano.make}, {piano.model}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <img src={this.state.currentPhoto} />
+            { photos.map((photo) => {
+              return (
+                <div className="photo-detail">
+                  <figure>
+                    <img onClick={this.selectPhoto.bind(this, photo)} src={photo.url} height="100%" width="100%" />
+                  </figure>
+                </div>
+                )
+            })}
+          <h3>About this piano</h3>
+          <p>{piano.description}</p>
+        </Modal.Body>
       </div>
+
     )
   }
 })

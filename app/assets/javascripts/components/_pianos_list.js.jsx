@@ -29,14 +29,6 @@ const PianosList = React.createClass({
     const Panel = ReactBootstrap.Panel;
     const Jumbotron = ReactBootstrap.Jumbotron;
     // End of Assets
-    const oldArray = [1, 2, 3, 4, 5];
-    const newArray = [];
-    const ranger = () => {
-      for (var i = 0; i < 3; i++); {
-        newArray.push(oldArray[i])
-      }
-      return newArray;
-    }
 
     const pianos = this.state.searchPianos.map((piano) => {
       return (
