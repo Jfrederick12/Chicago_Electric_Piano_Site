@@ -14,6 +14,10 @@ const PianoModal = React.createClass({
     });
   },
 
+  handleDelete(id) {
+    this.props.handleDelete(id);
+  },
+
   selectPhoto(photo) {
     this.setState({ currentPhoto: photo.url })
   },
@@ -30,6 +34,7 @@ const PianoModal = React.createClass({
           <Modal.Title>{piano.make}, {piano.model}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
+          <button onClick={this.handleDelete.bind(this, piano.id)}>delete</button>
           <img src={this.state.currentPhoto} />
             { photos.map((photo) => {
               return (

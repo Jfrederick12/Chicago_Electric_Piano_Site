@@ -14,6 +14,16 @@ const PianoContainer = React.createClass({
     this.setState({ showModal: true });
   },
 
+  handleDelete(id) {
+    $.ajax({
+      url: `/api/v1/pianos/${id}`,
+      type: 'DELETE',
+      success(response) {
+        console.log('successfuly removed')
+      }
+    })
+  },
+
   handleClick(piano) {
     const selectedPiano = piano;
     this.setState({ showModal: true });
@@ -28,7 +38,7 @@ const PianoContainer = React.createClass({
         <img src={piano.photo} alt={piano.model} />
         <figcaption>{piano.model}, {piano.year}</figcaption>
         <Modal show={this.state.showModal} onHide={this.close}>
-            < PianoModal {...piano} />
+            < PianoModal handleDelete={this.handleDelete} {...piano} />
         </Modal>
       </div>
     )

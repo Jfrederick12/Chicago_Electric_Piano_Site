@@ -1,12 +1,6 @@
 const NewPiano = React.createClass({
 
   handleClick() {
-    // const make = this.refs.make.value;
-    // const model = this.refs.model.value;
-    // const year = this.refs.year.value;
-    // const description = this.refs.description.value;
-    // const photo = this.refs.photo.value;
-    // const price = this.refs.price.value;
 
     const piano = {
       make: this.refs.make.value,
