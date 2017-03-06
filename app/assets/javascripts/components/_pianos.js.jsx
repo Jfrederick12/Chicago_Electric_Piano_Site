@@ -1,7 +1,7 @@
 const Pianos = React.createClass({
   getInitialState() {
     return {
-      userLogin: true,
+      loggedIn: true,
       pianos: []
     }
   },
@@ -19,7 +19,7 @@ const Pianos = React.createClass({
   },
 
   render() {
-    if (this.state.userLogin) {
+    if (this.state.loggedIn) {
       return (
         <div>
           < NewPiano handleSubmit={this.handleSubmit} />
