@@ -21,6 +21,15 @@
 
  }
 
+ ul {
+
+ }
+
+ li {
+  list-style-type: none;
+  padding: 5px;
+ }
+
 .piano-list-container {
   text-align: center;
   left: 20%;

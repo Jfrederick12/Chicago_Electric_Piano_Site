@@ -40,6 +40,8 @@ gem 'responders'
 gem 'react-rails'
 
 gem 'react-bootstrap-rails'
+
+gem 'react-router-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

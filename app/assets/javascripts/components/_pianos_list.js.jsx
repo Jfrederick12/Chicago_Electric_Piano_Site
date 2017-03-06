@@ -2,20 +2,12 @@ const PianosList = React.createClass({
 
   getInitialState() {
     return {
-      pianos: [],
       searchPianos: []
     }
   },
 
-  componentDidMount() {
-    $.getJSON('/api/v1/pianos.json', (response) => { this.setState({
-        pianos: response
-      })
-    });
-  },
-
   handleClick(make) {
-    const fenderPianos = this.state.pianos.filter((piano) => {
+    const fenderPianos = this.props.pianos.filter((piano) => {
       return piano.make === make
     });
     this.setState({ searchPianos: fenderPianos, open: !this.state.open })
