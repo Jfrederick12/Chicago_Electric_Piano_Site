@@ -1,19 +1,26 @@
 const NewPiano = React.createClass({
 
   handleClick() {
-    const make = this.refs.make.value;
-    const model = this.refs.model.value;
-    const year = this.refs.year.value;
-    const description = this.refs.description.value;
-    const photo = this.refs.photo.value;
-    const price = this.refs.price.value;
+    // const make = this.refs.make.value;
+    // const model = this.refs.model.value;
+    // const year = this.refs.year.value;
+    // const description = this.refs.description.value;
+    // const photo = this.refs.photo.value;
+    // const price = this.refs.price.value;
 
-    const piano = { make: make, model: model, year: year, description: description, photo: photo, price: price}
+    const piano = {
+      make: this.refs.make.value,
+      model: this.refs.model.value,
+      year: this.refs.year.value,
+      description: this.refs.description.value,
+      photo: this.refs.photo.value,
+      price: this.refs.price.value
+    }
 
     $.ajax({
       url: '/api/v1/pianos',
       type: 'POST',
-      data: { piano: { make: make, model: model, year: year, description: description, photo: photo, price: price}},
+      data: { piano },
       success: (piano) => {
         this.props.handleSubmit(piano)
       }
