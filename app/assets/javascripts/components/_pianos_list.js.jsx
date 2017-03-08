@@ -41,23 +41,23 @@ const PianosList = React.createClass({
           <div className="select-options">
             <div className="piano-select-container">
               <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
-              <div className="button-1">
+              <div className="button-1" onClick={() => this.handleClick('Fender Rhodes')}>
                 <div className="eff-1"></div>
-                <a onClick={() => this.handleClick('Fender Rhodes')}>Fender Rhodes</a>
+                <a>Fender Rhodes</a>
               </div>
             </div>
             <div className="piano-select-container">
                <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
-              <div className="button-1">
+              <div className="button-1" onClick={() => this.handleClick('Wurlitzer')}>
                 <div className="eff-1"></div>
-                <a onClick={() => this.handleClick('Wurlitzer')}>Wurlitzer</a>
+                <a>Wurlitzer</a>
               </div>
             </div>
             <div className="piano-select-container">
                <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
-              <div className="button-1">
+              <div className="button-1" onClick={() => this.handleClick('Wurlitzer')}>
                 <div className="eff-1"></div>
-                <a onClick={() => this.handleClick('Wurlitzer')}>Clavinet</a>
+                <a>Clavinet</a>
               </div>
             </div>
               <Panel >
