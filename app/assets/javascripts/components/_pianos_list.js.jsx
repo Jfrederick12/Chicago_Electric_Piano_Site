@@ -24,7 +24,7 @@ const PianosList = React.createClass({
 
     const pianos = this.state.searchPianos.map((piano) => {
       return (
-        <container key={piano.id}>
+        <container className="main-thumbnail" key={piano.id}>
           <a>
             <figure>
               < PianoContainer piano={piano}/>
