@@ -60,9 +60,9 @@ const PianosList = React.createClass({
                 <a>Clavinet</a>
               </div>
             </div>
-              <Panel >
-                { pianos }
-              </Panel>
+            <Panel >
+              { pianos }
+            </Panel>
           </div>
         </Jumbotron>
     )
