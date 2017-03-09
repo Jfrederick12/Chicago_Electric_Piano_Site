@@ -29785,3 +29785,28 @@ Processing by Api::V1::PianosController#index as JSON
 Completed 200 OK in 21ms (Views: 14.4ms | ActiveRecord: 0.3ms)
 
 
+DEPRECATION WARNING: to_prepare is deprecated and will be removed from Rails 5.1 (use ActiveSupport::Reloader.to_prepare instead) (called from <top (required)> at /Users/carlydyer/Documents/Chicago_Electric_Piano_Site/config/environment.rb:5)
+DEPRECATION WARNING: to_prepare is deprecated and will be removed from Rails 5.1 (use ActiveSupport::Reloader.to_prepare instead) (called from <top (required)> at /Users/carlydyer/Documents/Chicago_Electric_Piano_Site/config/environment.rb:5)
+DEPRECATION WARNING: to_prepare is deprecated and will be removed from Rails 5.1 (use ActiveSupport::Reloader.to_prepare instead) (called from <top (required)> at /Users/carlydyer/Documents/Chicago_Electric_Piano_Site/config/environment.rb:5)
+Started GET "/" for ::1 at 2017-03-09 12:15:31 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 301ms (Views: 289.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pianos.json" for ::1 at 2017-03-09 12:15:32 -0600
+Processing by Api::V1::PianosController#index as JSON
+  [1m[36mPiano Load (1.1ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 31ms (Views: 17.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/pianos/2/find_photo.json" for ::1 at 2017-03-09 12:15:37 -0600
+Processing by Api::V1::PianosController#find_photos as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" WHERE "pianos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 2]]
+Completed 200 OK in 48ms (Views: 14.5ms | ActiveRecord: 2.6ms)
+
+
