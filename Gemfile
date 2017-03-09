@@ -40,6 +40,15 @@ gem 'responders'
 gem 'react-rails'
 
 gem 'react-bootstrap-rails'
+
+gem 'react-router-rails'
+
+gem 'dragonfly'
+gem 'dragonfly-s3_data_store'
+
+group :production do
+  gem 'rack-cache', :require => 'rack/cache'
+end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

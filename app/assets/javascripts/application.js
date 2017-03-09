@@ -19,3 +19,6 @@
 //= require_tree .
 //= require react_bootstrap
 //= require bootstrap
+//= require react_router
+//= require react_router.min
+

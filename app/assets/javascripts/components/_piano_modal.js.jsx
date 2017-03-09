@@ -2,8 +2,17 @@ const PianoModal = React.createClass({
   getInitialState() {
     return {
       detailPhotos: [],
-      currentPhoto: this.props.photo
+      currentPhoto: this.props.photo,
+      loggedIn: true
     };
+  },
+
+  userLoggedIn(piano) {
+    if (this.state.loggedIn) {
+      return (
+        <button onClick={this.handleDelete.bind(this, piano.id)}>delete</button>
+      )
+    }
   },
 
   componentDidMount() {
@@ -12,6 +21,10 @@ const PianoModal = React.createClass({
         detailPhotos: response
       })
     });
+  },
+
+  handleDelete(id) {
+    this.props.handleDelete(id);
   },
 
   selectPhoto(photo) {
@@ -30,6 +43,7 @@ const PianoModal = React.createClass({
           <Modal.Title>{piano.make}, {piano.model}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
+        {this.userLoggedIn(piano)}
           <img src={this.state.currentPhoto} />
             { photos.map((photo) => {
               return (

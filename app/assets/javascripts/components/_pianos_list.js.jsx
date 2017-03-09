@@ -2,20 +2,12 @@ const PianosList = React.createClass({
 
   getInitialState() {
     return {
-      pianos: [],
       searchPianos: []
     }
   },
 
-  componentDidMount() {
-    $.getJSON('/api/v1/pianos.json', (response) => { this.setState({
-        pianos: response
-      })
-    });
-  },
-
   handleClick(make) {
-    const fenderPianos = this.state.pianos.filter((piano) => {
+    const fenderPianos = this.props.pianos.filter((piano) => {
       return piano.make === make
     });
     this.setState({ searchPianos: fenderPianos, open: !this.state.open })
@@ -32,7 +24,7 @@ const PianosList = React.createClass({
 
     const pianos = this.state.searchPianos.map((piano) => {
       return (
-        <container key={piano.id}>
+        <container className="main-thumbnail" key={piano.id}>
           <a>
             <figure>
               < PianoContainer piano={piano}/>
@@ -49,28 +41,28 @@ const PianosList = React.createClass({
           <div className="select-options">
             <div className="piano-select-container">
               <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
-              <div className="button-1">
+              <div className="button-1" onClick={() => this.handleClick('Fender Rhodes')}>
                 <div className="eff-1"></div>
-                <a onClick={() => this.handleClick('Fender Rhodes')}>Fender Rhodes</a>
+                <a>Fender Rhodes</a>
               </div>
             </div>
             <div className="piano-select-container">
                <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
-              <div className="button-1">
+              <div className="button-1" onClick={() => this.handleClick('Wurlitzer')}>
                 <div className="eff-1"></div>
-                <a onClick={() => this.handleClick('Wurlitzer')}>Wurlitzer</a>
+                <a>Wurlitzer</a>
               </div>
             </div>
             <div className="piano-select-container">
                <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/wurlitzer_icon.png?raw=true" height='100%' width='100%' />
-              <div className="button-1">
+              <div className="button-1" onClick={() => this.handleClick('Wurlitzer')}>
                 <div className="eff-1"></div>
-                <a onClick={() => this.handleClick('Wurlitzer')}>Clavinet</a>
+                <a>Clavinet</a>
               </div>
             </div>
-              <Panel >
-                { pianos }
-              </Panel>
+            <Panel >
+              { pianos }
+            </Panel>
           </div>
         </Jumbotron>
     )
