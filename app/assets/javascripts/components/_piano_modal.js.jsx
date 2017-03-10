@@ -16,7 +16,7 @@ const PianoModal = React.createClass({
   },
 
   componentDidMount() {
-    $.getJSON(`/api/v1/pianos/${this.props.id}/find_photo.json`, (response) => {
+    $.getJSON(`pianos/${this.props.id}/find_photo.json`, (response) => {
       this.setState({
         detailPhotos: response
       })
@@ -28,7 +28,7 @@ const PianoModal = React.createClass({
   },
 
   selectPhoto(photo) {
-    this.setState({ currentPhoto: photo.url })
+    this.setState({ currentPhoto: photo })
   },
 
   render() {
@@ -49,7 +49,7 @@ const PianoModal = React.createClass({
               return (
                 <div className="photo-detail">
                   <figure>
-                    <img onClick={this.selectPhoto.bind(this, photo)} src={photo.url} height="100%" width="100%" />
+                    <img onClick={this.selectPhoto.bind(this, photo)} src={photo} height="100%" width="100%" />
                   </figure>
                 </div>
                 )

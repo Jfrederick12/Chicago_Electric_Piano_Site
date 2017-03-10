@@ -1,13 +1,13 @@
 const Pianos = React.createClass({
   getInitialState() {
     return {
-      loggedIn: true,
+      loggedIn: false,
       pianos: []
     }
   },
 
   componentDidMount() {
-    $.getJSON('/api/v1/pianos.json', (response) => { this.setState({
+    $.getJSON('/pianos.json', (response) => { this.setState({
         pianos: response
       })
     });

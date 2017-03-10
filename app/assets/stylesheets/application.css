@@ -179,6 +179,7 @@
 }
 
 .main-thumbnail a:hover {
+  background-color: transparent;
   text-decoration: none;
 }
 
@@ -321,6 +322,7 @@ img {
 }
 
 .button-1:hover a{
+  background-color: transparent;
   color:#fff;
 }
 
