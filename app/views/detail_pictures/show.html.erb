@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image uid:</strong>
+  <%= @detail_picture.image_uid %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @detail_picture.title %>
+</p>
+
+<%= link_to 'Edit', edit_detail_picture_path(@detail_picture) %> |
+<%= link_to 'Back', detail_pictures_path %>

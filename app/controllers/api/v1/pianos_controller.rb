@@ -6,6 +6,10 @@ class Api::V1::PianosController < ApplicationController
     respond_with Piano.all
   end
 
+  def new
+    @piano = Piano.new
+  end
+
   def create
     respond_with :api, :v1, Piano.create(piano_params)
   end
