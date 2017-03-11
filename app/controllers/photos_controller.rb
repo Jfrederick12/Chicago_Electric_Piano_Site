@@ -6,7 +6,7 @@ class PhotosController < ApplicationController
   end
 
   def new
-    @piano = Piano.find(1)
+    @piano = Piano.find(params[:piano_id])
     @photo = Photo.new
   end
 
@@ -15,7 +15,7 @@ class PhotosController < ApplicationController
   # end
 
   def create
-    @piano = Piano.find(1)
+    @piano = Piano.find(params[:piano_id])
     @photo = Photo.new(photo_params)
     @photo.piano_id = @piano.id
 
@@ -31,7 +31,7 @@ class PhotosController < ApplicationController
   end
 
   def destroy
-    @piano = Piano.find(1)
+    @piano = Piano.find(params[:piano_id])
     Photo.destroy(params[:id])
     redirect_to @piano, notice: 'Photo was successfully destroyed.'
   end

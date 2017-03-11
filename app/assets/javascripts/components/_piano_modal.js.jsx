@@ -10,7 +10,9 @@ const PianoModal = React.createClass({
   userLoggedIn(piano) {
     if (this.state.loggedIn) {
       return (
+        <container>
         <button onClick={this.handleDelete.bind(this, piano.id)}>delete</button>
+        </container>
       )
     }
   },
@@ -25,6 +27,10 @@ const PianoModal = React.createClass({
 
   handleDelete(id) {
     this.props.handleDelete(id);
+  },
+
+  handleEdit(id) {
+    this.props.handleEdit(id);
   },
 
   selectPhoto(photo) {
