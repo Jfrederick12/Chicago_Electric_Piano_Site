@@ -85,6 +85,7 @@ detail_photos = [
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 2
   )
 end
@@ -94,6 +95,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 3
   )
 end
@@ -103,6 +105,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 4
   )
 end
@@ -112,6 +115,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 5
   )
 end
@@ -121,6 +125,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 6
   )
 end
@@ -130,6 +135,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 7
   )
 end
@@ -139,6 +145,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 8
   )
 end
@@ -148,6 +155,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 9
   )
 end
@@ -157,6 +165,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 10
   )
 end
@@ -166,6 +175,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 11
   )
 end
@@ -175,6 +185,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 12
   )
 end
@@ -184,6 +195,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 13
   )
 end
@@ -193,6 +205,7 @@ end
     name: Faker::Lorem.word,
     description: Faker::Lorem.sentence,
     url: detail_photos.sample,
+    image_uid: "2017/03/10/3a2ihuq7l2_piano2.jpg",
     piano_id: 14
   )
 end
