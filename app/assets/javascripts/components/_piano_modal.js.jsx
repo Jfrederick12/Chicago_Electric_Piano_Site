@@ -10,13 +10,15 @@ const PianoModal = React.createClass({
   userLoggedIn(piano) {
     if (this.state.loggedIn) {
       return (
+        <container>
         <button onClick={this.handleDelete.bind(this, piano.id)}>delete</button>
+        </container>
       )
     }
   },
 
   componentDidMount() {
-    $.getJSON(`/api/v1/pianos/${this.props.id}/find_photo.json`, (response) => {
+    $.getJSON(`pianos/${this.props.id}/find_photo.json`, (response) => {
       this.setState({
         detailPhotos: response
       })
@@ -27,8 +29,12 @@ const PianoModal = React.createClass({
     this.props.handleDelete(id);
   },
 
+  handleEdit(id) {
+    this.props.handleEdit(id);
+  },
+
   selectPhoto(photo) {
-    this.setState({ currentPhoto: photo.url })
+    this.setState({ currentPhoto: photo })
   },
 
   render() {
@@ -49,7 +55,7 @@ const PianoModal = React.createClass({
               return (
                 <div className="photo-detail">
                   <figure>
-                    <img onClick={this.selectPhoto.bind(this, photo)} src={photo.url} height="100%" width="100%" />
+                    <img onClick={this.selectPhoto.bind(this, photo)} src={photo} height="100%" width="100%" />
                   </figure>
                 </div>
                 )

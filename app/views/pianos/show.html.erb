@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <%@piano.detail_photos.each do |photo| %>
+    <img src='<%= photo.image.url %>' alt='<%= photo.id %>' width="25%" />
+    <form method="post" action="/pianos/<%= @piano.id %>/photos/<%= photo.id %>">
+      <input type="hidden" name="_method" value="delete">
+      <button class="button" type="submit">Delete</button>
+    </form>
+  <% end %>
+
+</p>
+
+
+<a href="/pianos/<%= @piano.id %>/photos/new">add photo</a>
+<%= link_to 'Back', pianos_path %>

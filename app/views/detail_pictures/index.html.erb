@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Detail Pictures</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image uid</th>
+      <th>Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @detail_pictures.each do |detail_picture| %>
+      <tr>
+        <img src='<%= detail_picture.image.thumb('200x200#').url %>' />
+        <td><%= detail_picture.image.url %></td>
+        <td><%= detail_picture.title %></td>
+        <td><%= link_to 'Show', detail_picture %></td>
+        <td><%= link_to 'Edit', edit_detail_picture_path(detail_picture) %></td>
+        <td><%= link_to 'Destroy', detail_picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Detail Picture', new_detail_picture_path %>

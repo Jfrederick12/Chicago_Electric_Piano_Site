@@ -16,7 +16,7 @@ const PianoContainer = React.createClass({
 
   handleDelete(id) {
     $.ajax({
-      url: `/api/v1/pianos/${id}`,
+      url: `pianos/${id}`,
       type: 'DELETE',
       success(response) {
         console.log('successfuly removed')
