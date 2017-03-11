@@ -24,6 +24,7 @@ const NavBar = React.createClass({
             <MenuItem eventKey={3.3}>Work Girl</MenuItem>
             <MenuItem divider />
           </NavDropdown>
+          <NavItem eventKey={4} href="/pianos/new">Add Piano</NavItem>
         </Nav>
       </Navbar>
     )

@@ -1,8 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Make:</strong>
-  <%= @piano.year %>
+  <%@piano.detail_photos.each do |photo| %>
+    <img src='<%= photo.image.url %>' alt='<%= photo.id %>' width="25%" />
+    <form method="post" action="/pianos/<%= @piano.id %>/photos/<%= photo.id %>">
+      <input type="hidden" name="_method" value="delete">
+      <button class="button" type="submit">Delete</button>
+    </form>
+  <% end %>
+
 </p>
 
 

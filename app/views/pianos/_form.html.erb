@@ -11,9 +11,14 @@
     </div>
   <% end %>
 
-  <div class="field">
+<!--   <div class="field">
     <%= f.label :make %>
     <%= f.text_field :make %>
+  </div> -->
+
+  <div class="field">
+    <%= f.label :make %>
+    <%= f.select(:make, options_for_select(['Fender Rhodes', 'Wurlitzer', 'Clavinet'] )) %>
   </div>
 
   <div class="field">

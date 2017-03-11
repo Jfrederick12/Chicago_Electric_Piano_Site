@@ -31,7 +31,9 @@ class PhotosController < ApplicationController
   end
 
   def destroy
-    respond_with Photo.destroy(params[:id])
+    @piano = Piano.find(1)
+    Photo.destroy(params[:id])
+    redirect_to @piano, notice: 'Photo was successfully destroyed.'
   end
 
   private
