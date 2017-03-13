@@ -17,6 +17,30 @@
 
  @import url(http://fonts.googleapis.com/css?family=Roboto|Questrial:400,100,900);
 
+ /*PIANO#INDEX VIEW STYLESHEET*/
+.piano-view-container {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.piano-view-container img{
+  width: 420px;
+}
+
+.piano-view-container span {
+  padding-top: 10px;
+  /*float: left;*/
+  width: 100px;
+  display: inline-block;
+}
+
+.piano-view-container span img {
+  /*float: left;*/
+  width: 100%;
+  display: inline-block;
+}
+ /*--------------------------------*/
+
 .navi ul {
   list-style: none;
   background-color: #444;
