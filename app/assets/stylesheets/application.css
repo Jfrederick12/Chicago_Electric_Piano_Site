@@ -18,6 +18,21 @@
  @import url(http://fonts.googleapis.com/css?family=Roboto|Questrial:400,100,900);
 
  /*PIANO#INDEX VIEW STYLESHEET*/
+.piano-show-container {
+  padding: 10px;
+}
+
+.piano-show-container > span {
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+.piano-show-container p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
 .piano-view-container {
   padding: 10px;
   border-bottom: 1px solid black;
