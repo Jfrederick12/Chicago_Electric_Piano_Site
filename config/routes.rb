@@ -19,4 +19,5 @@ Rails.application.routes.draw do
 
 
   get 'detail_pictures/photo_url', :to => 'detail_pictures#photo_url'
+
 end

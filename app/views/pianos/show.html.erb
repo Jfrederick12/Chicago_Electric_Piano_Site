@@ -1,15 +1,22 @@
 <p id="notice"><%= notice %></p>
+<div class="piano-show-container">
+  <img src='<%= @piano.photo %>' alt='<%= @piano.id %>'  width="50%" />
+  <span>Model: <%= @piano.model %></span>
+  <span>Make: <%= @piano.make %></span>
+  <span>Price: <%= @piano.price %></span>
+  <p>Description: <%= @piano.description %></span>
+  <div class="piano-view-container">
+    <%@piano.detail_photos.each do |photo| %>
+      <span><img src='<%= photo.image.url %>' alt='<%= photo.id %>'  /></span>
 
-<p>
-  <%@piano.detail_photos.each do |photo| %>
-    <img src='<%= photo.image.url %>' alt='<%= photo.id %>' width="25%" />
-    <form method="post" action="/pianos/<%= @piano.id %>/photos/<%= photo.id %>">
-      <input type="hidden" name="_method" value="delete">
-      <button class="button" type="submit">Delete</button>
-    </form>
-  <% end %>
+      <form method="post" action="/pianos/<%= @piano.id %>/photos/<%= photo.id %>">
+        <input type="hidden" name="_method" value="delete">
+        <button class="button" type="submit">Delete</button>
+      </form>
 
-</p>
+    <% end %>
+  </div>
+</div>
 
 
 <a href="/pianos/<%= @piano.id %>/photos/new">add photo</a>

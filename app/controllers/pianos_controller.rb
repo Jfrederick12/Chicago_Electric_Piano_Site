@@ -3,7 +3,12 @@ class PianosController < ApplicationController
   respond_to :json
 
   def index
-    respond_with Piano.all
+    @pianos = Piano.all
+
+
+    respond_with Piano.all do |format|
+      format.html { render :index }
+    end
   end
 
   def new
@@ -40,6 +45,10 @@ class PianosController < ApplicationController
     piano = Piano.find(params[:id])
     piano.update_attributes(piano_params)
     respond_with piano, json: piano
+  end
+
+  def all_pianos
+    respond_with Piano.all
   end
 
   def find_photos

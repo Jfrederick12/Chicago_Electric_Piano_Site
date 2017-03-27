@@ -17,6 +17,45 @@
 
  @import url(http://fonts.googleapis.com/css?family=Roboto|Questrial:400,100,900);
 
+ /*PIANO#INDEX VIEW STYLESHEET*/
+.piano-show-container {
+  padding: 10px;
+}
+
+.piano-show-container > span {
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+.piano-show-container p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.piano-view-container {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.piano-view-container img{
+  width: 420px;
+}
+
+.piano-view-container span {
+  padding-top: 10px;
+  /*float: left;*/
+  width: 100px;
+  display: inline-block;
+}
+
+.piano-view-container span img {
+  /*float: left;*/
+  width: 100%;
+  display: inline-block;
+}
+ /*--------------------------------*/
+
 .navi ul {
   list-style: none;
   background-color: #444;
@@ -135,6 +174,7 @@
   overflow: hidden;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+
 }
 
 .photo-detail:hover {
