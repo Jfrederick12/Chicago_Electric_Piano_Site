@@ -3,6 +3,7 @@ const App = React.createClass({
     return(
       <div>
         < NavBar />
+        < ServicesHeader />
         < Pianos />
       </div>
     )
