@@ -15,13 +15,13 @@ const ServicesHeader = React.createClass({
         <p className="border-divider">We take pride in our work while offering a wide variety of electric pianos. Blah blah blah, more content would fill in here.</p>
         <div className="select-options">
           <div className="piano-select-container">
-            <div className="button-1" onClick={ ()=> this.setState({ open: !this.state.open })}>
-              <div className="eff-1"></div>
+            <div className="service-button" onClick={ ()=> this.setState({ open: !this.state.open })}>
+              <div className="service-eff"></div>
               <a>Services</a>
             </div>
           </div>
           <Panel collapsible expanded={this.state.open}>
-            Stuff!
+            < ServicesContainer />
           </Panel>
         </div>
 		  </Jumbotron>

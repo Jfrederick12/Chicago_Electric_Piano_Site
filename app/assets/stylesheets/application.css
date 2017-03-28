@@ -376,10 +376,12 @@ img {
   border-bottom: 1px solid gray;
 }
 
-/* Services Page */
+/* -------------Services Page--------------- */
 
 .service-jumbo {
   display: block;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 100vh;
   margin-bottom: -20px;
   background-color: #22264b;
@@ -394,8 +396,58 @@ img {
 
 .service-jumbo p {
   font-family: 'Questrial', sans-serif;
+  color: #dddfd4;
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
+}
+
+.service-button{
+  width:100%;
+  height:50px;
+  border:2px solid #dddfd4;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+}
+
+.service-button a{
+  width: 100%;
+  font-family: 'Questrial', sans-serif;
+  font-size:16px;
+  color:#dddfd4;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+
+.service-eff{
+  width:100%;
+  height:50px;
+  top:-2px;
+  right: 100%;
+  background:#dddfd4;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+
+.service-button:hover .service-eff{
+  right:0;
+}
+
+.service-button:hover a{
+  background-color: transparent;
+  color:#fff;
+}
+
+.service-container {
+  height: 50vh;
 }
