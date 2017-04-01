@@ -20,12 +20,13 @@ const ServicesHeader = React.createClass({
               <a>Services</a>
             </div>
           </div>
-          <Panel collapsible expanded={this.state.open}>
-            < ServicesContainer />
-          </Panel>
         </div>
 		  </Jumbotron>
 	  </div>
 	)
   }
 })
+
+// <Panel collapsible expanded={this.state.open}>
+//             < ServicesContainer />
+//           </Panel>
