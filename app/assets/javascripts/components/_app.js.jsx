@@ -4,6 +4,7 @@ const App = React.createClass({
       <div>
         < NavBar />
         < ServicesContainer />
+        < Tuning />
         < Pianos />
       </div>
     )

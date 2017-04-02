@@ -456,7 +456,7 @@ img {
 .left {
   width: 50%;
   height: 100%;
-  background: #dddfd4;
+  background: #e8edf3;
   float: left;
   padding: 50px;
   padding-right: 150px;
@@ -471,4 +471,33 @@ img {
   margin-left: 15%;
   height: 100%;
   background: #22264b;
+}
+
+/* -----------------Tuning Component----------------*/
+
+
+.tuning-left {
+  width: 50%;
+  height: 100%;
+  background: #e6cf8b;
+  float: left;
+  padding: 50px;
+  padding-right: 150px;
+}
+
+.tuning-left h1 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 22px;
+  color: #e8edf3;
+}
+
+.tuning-right p {
+  font-family: 'Questrial', sans-serif;
+  font-size: 16px;
+}
+
+.tuning-right {
+  margin-left: 15%;
+  height: 100%;
+  background: #e8edf3;
 }
