@@ -382,13 +382,12 @@ img {
   display: block;
   padding-left: 20px;
   padding-right: 20px;
-  height: 400px;
+  height: 250px;
   margin-bottom: -20px;
-  background-color: #22264b;
+  background-color: #e8edf3;
 }
 
 .service-jumbo h1 {
-  color: #dddfd4;
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
@@ -475,14 +474,16 @@ img {
 
 /* -----------------Tuning Component----------------*/
 
+.tuning-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #e8edf3;
+}
 
 .tuning-left {
-  width: 50%;
-  height: 100%;
-  background: #e6cf8b;
+  height: 100vh;
+  background: #e8edf3;
   float: left;
-  padding: 50px;
-  padding-right: 150px;
 }
 
 .tuning-left h1 {
@@ -497,7 +498,21 @@ img {
 }
 
 .tuning-right {
-  margin-left: 15%;
-  height: 100%;
-  background: #e8edf3;
+  height: 100vh;
+  background: #e6cf8b;
+}
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+/* -----------------Tuning Container Component---------------*/
+
+.service {
+  padding: 10px;
 }

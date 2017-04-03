@@ -2,8 +2,9 @@ const TuningContainer = React.createClass({
 
 	render() {
 		return(
-			<div>
-				<h1>{this.props.service}</h1>
+			<div className="col">
+				<h3>{this.props.service.name}</h3>
+				<p>{this.props.service.description}</p>
 			</div>
 		)
 	}
