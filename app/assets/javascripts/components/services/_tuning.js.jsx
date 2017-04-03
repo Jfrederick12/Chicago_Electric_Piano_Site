@@ -12,7 +12,7 @@ const Tuning = React.createClass({
 			// 	includes: " "
 		 //  },
 			{ name: "The Standard Tuneup",
-				description: "Standard tuneups are necessary to ensure the health of any electro-mechanical instrument. Our Standard Tuneup is the most comprehensive basic setup and tuning service available for your Rhodes or Wurlitzer and is focused at providing the most appropriate ways of maintaining the health and function of the instrument. With the right foundation, it is guaranteed to restore the tuning, voicing, and action/regulation adjustments. This tuneup is recommended every six months to two years depending on use and is critical for maintaining the health and voice of your instrument.",
+				description: "Standard tuneups are necessary to ensure the health of any electro-mechanical instrument. Our Standard Tuneup is the most comprehensive basic setup and tuning service available for your Rhodes or Wurlitzer and is focused at providing the most appropriate ways of maintaining the health and function of the instrument. With the right foundation, it is guaranteed to restore the tuning, voicing, and action/regulation adjustments.",
 				price: "$150-450",
 				subText: "For most instruments",
 				includes: [
@@ -37,21 +37,25 @@ const Tuning = React.createClass({
 				price: "$1,500-3,000+",
 				subText: "Better than new",
 				includes: []
+			},
+			{ name: "Custom Shop",
+				description: "Simply owning a nearly one-of-a-kind vintage instrument sometimes just isn’t enough without its own custom look or circuit modifications. At The Chicago Electric Piano Company we understand–if not encourage–this kind of self indulgence. In addition to being able to restore your vintage piano to a point that plays better than when it left the factory, our workshop will consult with you to rebuild your instrument to obtain any custom look or sound that you are looking for. ",
+				price: "$400-2,000+",
+				subText: "Better than new",
+				includes: []
 			}
 		]
 
 
 		return(
 			<div className="tuning-container">
-				< ServicesHeader />
 				<Grid>
 					<Row>
 						{Services.map((service) => {
-							return <Col xs={6} md={4}>< TuningContainer service={service} /></Col>
+							return <Col xs={6} md={3}>< TuningContainer service={service} /></Col>
 						})}
 					</Row>
 				</Grid>
-				
 			</div>
 		)
 	}
