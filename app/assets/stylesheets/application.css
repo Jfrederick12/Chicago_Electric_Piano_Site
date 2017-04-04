@@ -545,6 +545,12 @@ img {
   color: white;
 }
 
+.custom-border {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+  width: 80px;
+}
+
 /* ----------------Custom Shop Component------------------*/
 
 .custom-jumbo {

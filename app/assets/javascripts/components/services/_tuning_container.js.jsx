@@ -6,6 +6,7 @@ const TuningContainer = React.createClass({
 				<h3>{this.props.service.name}</h3>
 				<p>Pricing: {this.props.service.price}</p>
 				<p>{this.props.service.description}</p>
+				<p className="custom-border"></p>
 			</div>
 		)
 	}
