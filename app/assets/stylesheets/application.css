@@ -56,6 +56,20 @@
 }
  /*--------------------------------*/
 
+ /*Pianos/show*/
+
+ .admin-photos li{
+  display: inline-block;
+  float: left;
+  width: 20%;
+  margin-right: 10px;
+ }
+
+ .admin-photos img {
+ }
+
+ /*-------------*/
+
 .navi ul {
   list-style: none;
   background-color: #444;

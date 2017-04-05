@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
 
-  resources :users, only: [:create, :new]
+  # resources :users, only: [:create, :new]
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
+
+  get '/add_piano' => 'pianos#new'
 
   resources :detail_pictures
 

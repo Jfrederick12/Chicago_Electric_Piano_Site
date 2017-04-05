@@ -17,6 +17,11 @@
         <li class="contact"><a href="#">Contact</a></li>
       </ul>
     </div> -->
+    <% if current_user %>
+      Signed in as <%= current_user.username %> | <%= link_to "Logout", '/logout' %>
+    <% else %>
+      <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+    <% end %>
     <div class="banner">
       <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_logo_white.png?raw=true" height="50%" width="50%" />
     </div>

@@ -2,12 +2,9 @@
 <% @pianos.each do |piano| %>
   <div class="piano-view-container">
     <%= piano.model %>
-    <a href="/pianos/<%= piano.id %>/photos/new">add photo</a>
 
-    <img src='<%= piano.photo %>'  />
+    <a href="/pianos/<%= piano.id %>/"><img src='<%= piano.photo %>'  /></a>
+    <%= piano.description %>
 
-      <% piano.detail_photos.each do |detail| %>
-          <span><img src='<%= detail.image.url %>'  /></span>
-      <% end %>
   </div>
 <% end %>

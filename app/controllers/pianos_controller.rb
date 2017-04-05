@@ -12,26 +12,48 @@ class PianosController < ApplicationController
   end
 
   def new
-    @piano = Piano.new
+    if current_user && session[:user_id] = current_user.id 
+      @piano = Piano.new
+    else
+      redirect_to '/'
+    end
   end
 
   def show
-    @piano = Piano.find(params[:id])
+    if current_user && session[:user_id] = current_user.id 
+      @piano = Piano.find(params[:id])
+    else
+      redirect_to '/'
+    end
   end
 
   def create
     @piano = Piano.new(piano_params)
 
     respond_to do |format|
-      if @piano.save
-        format.html { redirect_to @piano, notice: 'Detail picture was successfully created.' }
-        format.json { render :show, status: :created, location: @piano }
+      if current_user && session[:user_id] = current_user.id 
+        if @piano.save
+          format.html { redirect_to @piano, notice: 'Detail picture was successfully created.' }
+          format.json { render :show, status: :created, location: @piano }
+        else
+          format.html { render :new }
+          format.json { render json: @piano.errors, status: :unprocessable_entity }
+        end
       else
-        format.html { render :new }
-        format.json { render json: @piano.errors, status: :unprocessable_entity }
+        redirect_to '/'
       end
     end
   end
+
+  # respond_to do |format|
+  #   if @piano.save
+  #     format.html { redirect_to @piano, notice: 'Detail picture was successfully created.' }
+  #     format.json { render :show, status: :created, location: @piano }
+  #   else
+  #     format.html { render :new }
+  #     format.json { render json: @piano.errors, status: :unprocessable_entity }
+  #   end
+  # end
 
   # def create
   #   respond_with :api, :v1, Piano.create(piano_params)
