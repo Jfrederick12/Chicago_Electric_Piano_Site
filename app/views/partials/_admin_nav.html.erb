@@ -1,0 +1,3 @@
+    <% if current_user %>
+      <%= current_user.username %> | <%= link_to 'Home', root_path %> | <%= link_to "Logout", '/logout' %> | <a href="/pianos/new">Add Piano</a> | <a href="/pianos">Pianos</a> 
+    <% end %>

@@ -1,6 +1,4 @@
     <% if current_user %>
       Signed in as <%= current_user.username %> | <%= link_to "Logout", '/logout' %> | <a href="/pianos/new">Add Piano</a> | <a href="/pianos">Pianos</a> | <%= link_to 'Home', root_path %>
-    <% else %>
-      <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
     <% end %>
 <%= react_component 'App' %>
