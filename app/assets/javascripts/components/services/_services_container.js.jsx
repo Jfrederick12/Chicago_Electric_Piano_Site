@@ -2,7 +2,7 @@ const ServicesContainer = React.createClass({
 	render() {
 
 		return(
-			<div className="service-container">
+			<div id="services" className="service-container"><a name="services"></a>
 		    <div className="left">
 		    	<h1>Our Services</h1>
 		    	<p>The Chicago Electric Piano Co. is the expert resource for servicing Rhodes, Wurlitzers, and Hohner Clavinets in addition to an array of lesser known electro-mechanical pianos and vintage keyboards. We also have extensive experience servicing Maestro, Musser, Jenco, Howard, Farfisa, Vox, Gibson and Fender organs, as well as a variety of relatively unknown vintage keyboards. From your most basic tuning to a full expert restoration of your instrument to its original glory, The Chicago Electric Piano Co. is here to restore that vintage sound that you just can’t get enough of.<br/><br/>

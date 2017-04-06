@@ -17,14 +17,9 @@ const NavBar = React.createClass({
         </Navbar.Header>
         <Nav>
           <NavItem eventKey={1} href="/">Home</NavItem>
-          <NavItem eventKey={2} href="#">Pianos</NavItem>
-          <NavDropdown eventKey={3} title="Services" id="basic-nav-dropdown">
-            <MenuItem eventKey={3.1}>Fixin</MenuItem>
-            <MenuItem eventKey={3.2}>Custom</MenuItem>
-            <MenuItem eventKey={3.3}>Work Girl</MenuItem>
-            <MenuItem divider />
-          </NavDropdown>
-          <NavItem eventKey={4} href="/pianos/new">Add Piano</NavItem>
+          <NavItem eventKey={2} href="#pianos">Pianos</NavItem>
+          <NavItem eventKey={3} href="#services">Services</NavItem>
+          <NavItem eventKey={2} href="#blog">Blog</NavItem>
         </Nav>
       </Navbar>
     )
