@@ -28,7 +28,7 @@ const Pianos = React.createClass({
       )
     } else {
       return(
-        <div>
+        <div id="pianos"><a name="pianos"></a>
           < PianosList pianos={this.state.pianos} />
         </div>
       )
