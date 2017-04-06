@@ -6,8 +6,12 @@ class PhotosController < ApplicationController
   end
 
   def new
-    @piano = Piano.find(params[:piano_id])
-    @photo = Photo.new
+    if current_user && session[:user_id] = current_user.id 
+      @piano = Piano.find(params[:piano_id])
+      @photo = Photo.new
+    else
+      redirect_to '/'
+    end
   end
 
   # def create

@@ -5,9 +5,13 @@ class PianosController < ApplicationController
   def index
     @pianos = Piano.all
 
-
-    respond_with Piano.all do |format|
-      format.html { render :index }
+    if current_user && session[:user_id] = current_user.id 
+      render :index
+    else
+      respond_to do |format|
+        format.html {redirect_to '/'}
+        format.json { render json: @pianos }
+      end
     end
   end
 

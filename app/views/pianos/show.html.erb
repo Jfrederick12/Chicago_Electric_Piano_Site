@@ -1,7 +1,4 @@
-<%= render template: "/partials/_admin_nav.html.erb" %> |
-
-<a href="/pianos/<%= @piano.id %>/photos/new">add photo</a>
-
+<%= render template: "/partials/_admin_nav.html.erb" %>
 <p id="notice"><%= notice %></p>
 <div class="piano-show-container">
   <img src='<%= @piano.photo %>' alt='<%= @piano.id %>'  width="50%" />
@@ -10,7 +7,12 @@
   <span>Price: <%= @piano.price %></span>
   <p>Description: <%= @piano.description %></span>
 
+  <form action="/pianos/<%= @piano.id %>/photos/new">
+    <input type="submit" value="add photo" />
+  </form>
+
     <ul class="admin-photos">
+
       <% @piano.detail_photos.each do |photo| %>
         <li>
           <img src='<%= photo.image.url %>' alt='<%= photo.id %>'  />
