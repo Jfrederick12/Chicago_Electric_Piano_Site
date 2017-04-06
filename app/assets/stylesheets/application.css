@@ -56,6 +56,20 @@
 }
  /*--------------------------------*/
 
+ /*Pianos/show*/
+
+ .admin-photos li{
+  display: inline-block;
+  float: left;
+  width: 20%;
+  margin-right: 10px;
+ }
+
+ .admin-photos img {
+ }
+
+ /*-------------*/
+
 .navi ul {
   list-style: none;
   background-color: #444;
@@ -142,6 +156,79 @@
 .banner img {
   background: transparent;
 }
+
+/*USERS VIEWS*/
+
+.link-container {
+  padding: 10px;
+  position: absolute;
+  margin-top: 200px;
+  border: 2px solid white;
+}
+
+.link-container a {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'Questrial', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.link-container a:visited {
+  color: white;
+}
+
+.link-container a:hover {
+  color: #e6cf8b;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.logged-in-message {
+  padding: 10px;
+  position: absolute;
+  margin-top: 200px;
+  font-size: 20px;
+  color: white;
+}
+
+.log-out {
+  padding: 2px 5px 2px 5px;
+  position: absolute;
+  margin-top: 240px;
+  font-size: 20px;
+  color: white;
+  border: 2px solid white;
+}
+
+.log-out a:visited {
+  color: white;
+}
+
+.log-out a:hover {
+  color: #e6cf8b;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.sign-form {
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+.sign-form h1 {
+
+}
+
+
+
+/*FORM*/
+
+
+
+/*----------------*/
+
 
 .photo-detail {
   padding-top: 5px;
