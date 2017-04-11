@@ -231,3 +231,21 @@ end
     price: [ 2000, 3000, 1500, 5000, 3500 ].sample
   )
 end
+
+10.times do
+  Post.create(
+    name: Faker::Hipster.words(3).join(' '),
+    body: Faker::Hipster.sentences(4).join(' '),
+    author_id: 1
+  )
+end
+
+Post.all.each do |post|
+  3.times do
+    Comment.create(
+      body: Faker::Hipster.sentences(3).join(' '),
+      commenter: Faker::Name.prefix + Faker::Name.first_name + Faker::Name.suffix,
+      post_id: post.id
+    )
+  end
+end

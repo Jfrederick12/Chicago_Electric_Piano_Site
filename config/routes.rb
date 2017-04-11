@@ -18,7 +18,10 @@ Rails.application.routes.draw do
     resources :photos
   end
 
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
+
 
   get '/blog' => 'site#blog'
 

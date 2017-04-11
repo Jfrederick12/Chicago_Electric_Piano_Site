@@ -1,7 +1,7 @@
 const BlogPage = React.createClass({
   render() {
     return(
-      <div>
+      <div className="post-list">
         < PostList />
       </div>
     )

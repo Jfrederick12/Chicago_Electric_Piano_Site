@@ -14,7 +14,7 @@ const PostList = React.createClass({
 
   render() {
     return(
-      <div className="post-list">
+      <div>
         {this.state.posts.map((post) => {
           return <container key={post.id}>< PostContainer post={post} /></container>
         })}
