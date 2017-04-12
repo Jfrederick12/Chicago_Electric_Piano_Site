@@ -18,6 +18,13 @@ Rails.application.routes.draw do
     resources :photos
   end
 
+  resources :posts do
+    resources :comments
+  end
+
+
+  get '/blog' => 'site#blog'
+
   root to: 'site#index'
   # resources :pictures, only: [:new, :create, :index]
   # root to: 'pictures#index'
