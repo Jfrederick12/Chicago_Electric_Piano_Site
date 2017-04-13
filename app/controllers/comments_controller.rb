@@ -10,6 +10,14 @@ class CommentsController < ApplicationController
     end
   end
 
+  def create
+    @comment = Comment.new(comment_params)
+    @comment.post_id = params[:post_id]
+
+    if @comment.save
+      respond_with @comment, json: @comment
+    end
+  end
 
   private
 

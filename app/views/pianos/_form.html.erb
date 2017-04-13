@@ -17,33 +17,27 @@
   </div> -->
 
   <div class="field">
-    <%= f.label :make %>
     <%= f.select(:make, options_for_select(['Fender Rhodes', 'Wurlitzer', 'Clavinet'] )) %>
   </div>
 
   <div class="field">
-    <%= f.label :model %>
-    <%= f.text_field :model %>
+    <%= f.text_field :model, placeholder: :model %>
   </div>
 
   <div class="field">
-    <%= f.label :year %>
-    <%= f.text_field :year %>
+    <%= f.text_field :year, placeholder: :year %>
   </div>
 
   <div class="field">
-    <%= f.label :description %>
-    <%= f.text_field :description %>
+    <%= f.text_field :description, placeholder: :description %>
   </div>
 
   <div class="field">
-    <%= f.label :photo %>
-    <%= f.text_field :photo %>
+    <%= f.text_field :photo, placeholder: :photo %>
   </div>
 
   <div class="field">
-    <%= f.label :price %>
-    <%= f.text_field :price %>
+    <%= f.text_field :price, placeholder: :price %>
   </div>
 
   <div class="actions">

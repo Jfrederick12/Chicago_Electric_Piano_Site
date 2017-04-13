@@ -32,3 +32,22 @@
   border-bottom: 1px solid #e8edf3;
   padding: 10px;
 }
+
+.post-container button {
+  margin-top: 10px;
+}
+
+.panel {
+    margin-top: 10px;
+    box-shadow: none;
+    border: 0;
+}
+
+.add-comment {
+  list-style-type: none;
+  margin-left: -45px;
+}
+
+.add-comment textarea {
+  width: 100%;
+}

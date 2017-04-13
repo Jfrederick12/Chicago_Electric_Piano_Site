@@ -13,8 +13,13 @@ const CommentList = React.createClass({
     });
   },
 
+	handleSubmit(comment) { 
+		var newState = this.state.comments.concat(comment); 
+		this.setState({ comments: newState }) 
+	},
+
+
   render() {
-  	console.log(this.state.comments.length)
   	if (this.state.comments.length !== 0) {
 	    return(
 	      <div className="comments">
