@@ -2,8 +2,9 @@ const PostContainer = React.createClass({
   render() {
     return(
       <div className="post-container">
-        <h3>{this.props.post.name}</h3>
-
+        <span>{this.props.post.name}</span><span>{this.props.post.pretty_time}</span>
+        <p>{this.props.post.body}</p>
+        < CommentList post={this.props.post} />
       </div>
     )
   }
