@@ -20,7 +20,12 @@ const NewComment = React.createClass({
 			<ul className="add-comment">
 				<li><textarea ref='body' cols="50" rows="10" placeholder='comment'></textarea></li>
 				<li><input ref='commenter' placeholder='Your Name' /></li>
-				<li><button onClick={this.handleClick}>Submit</button></li>		
+				<li>
+					<div className="add-button" onClick={this.handleClick}>
+						<div className="eff-1"></div>
+						<a>Submit</a>
+					</div>
+				</li>		
 			</ul>
 		)
 	}

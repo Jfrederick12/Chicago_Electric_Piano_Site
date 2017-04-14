@@ -51,3 +51,94 @@
 .add-comment textarea {
   width: 100%;
 }
+
+.comment-button{
+  width:100%;
+  height:50px;
+  border:2px solid #22264b;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin: 10px 0 20px 0;
+}
+
+.comment-button a{
+  width: 100%;
+  font-family: 'Questrial', sans-serif;
+  font-size:16px;
+  color:#22264b;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+
+.comment-eff{
+  width:100%;
+  height:50px;
+  top:-2px;
+  right: 100%;
+  background:#22264b;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+
+.comment-button:hover .eff-1{
+  right:0;
+  background: #22264b;
+}
+
+.comment-button:hover a{
+  background-color: transparent;
+  color:#fff;
+}
+
+
+.add-button{
+  width:30%;
+  height:50px;
+  border:2px solid #22264b;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin: 10px 0 20px 0;
+}
+
+.add-button a{
+  width: 30%;
+  font-family: 'Questrial', sans-serif;
+  font-size:16px;
+  color:#22264b;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+
+.add-eff{
+  width:100%;
+  height:50px;
+  top:-2px;
+  right: 100%;
+  background:#22264b;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+
+.add-button:hover .eff-1{
+  right:0;
+  background: #22264b;
+}
+
+.add-button:hover a{
+  background-color: transparent;
+  color:#fff;
+}

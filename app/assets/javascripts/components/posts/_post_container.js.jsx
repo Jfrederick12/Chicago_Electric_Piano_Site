@@ -15,9 +15,10 @@ const PostContainer = React.createClass({
         < CommentList post={this.props.post} />
 
         <div className="comment">
-	        <button onClick={ ()=> this.setState({ open: !this.state.open })}>
-	          Comment
-	        </button>
+	        <div className="comment-button" onClick={ ()=> this.setState({ open: !this.state.open })}>
+	        	<div className="eff-1"></div>
+	          <a>Comment</a>
+	        </div>
 	        <Panel className="panel" collapsible expanded={this.state.open}>
 			      < NewComment post={this.props.post} />
 		      </Panel>
