@@ -10,6 +10,7 @@ const ServicesContainer = React.createClass({
 						In the end, any musical instrument is only going to play and sound as well as the condition of the instrument’s parts allow as well as the level of detail given to how the instrument is setup to play. And ongoing setups throughout the lifespan of the instrument play an integral role in the life and sound of the instrument. Depending on the condition of the instrument’s parts and current setup the cost of repairs and setup can vary to a great degree. Following an in depth evaluation of your instrument by our workshop we will give you a detailed estimate of the work necessary before service begins.</p>
 		    </div>
 			  <div className="right">
+			  	<img src="images/services.png" />
 			  </div>
 			</div>
 		)

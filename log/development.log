@@ -18029,3 +18029,667 @@ Processing by CommentsController#index as JSON
 Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for ::1 at 2017-04-13 17:03:03 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 85ms (Views: 82.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-13 17:03:03 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-13 17:38:01 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendering partials/_admin_nav.html.erb
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_admin_nav.html.erb (1.8ms)
+  Rendered posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 157ms (Views: 155.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts.json" for ::1 at 2017-04-13 17:38:01 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1/comments.json" for ::1 at 2017-04-13 17:38:01 -0500
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"1"}
+Started GET "/posts/2/comments.json" for ::1 at 2017-04-13 17:38:01 -0500
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+Processing by CommentsController#index as JSON
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/4/comments.json" for ::1 at 2017-04-13 17:38:01 -0500
+  Parameters: {"post_id"=>"2"}
+Started GET "/posts/5/comments.json" for ::1 at 2017-04-13 17:38:01 -0500
+Started GET "/posts/3/comments.json" for ::1 at 2017-04-13 17:38:01 -0500
+Processing by CommentsController#index as JSON
+Started GET "/posts/7/comments.json" for ::1 at 2017-04-13 17:38:01 -0500
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+Processing by CommentsController#index as JSON
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"3"}
+  Parameters: {"post_id"=>"4"}
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+
+
+  Parameters: {"post_id"=>"5"}
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+Started GET "/posts/8/comments.json" for ::1 at 2017-04-13 17:38:01 -0500
+  Parameters: {"post_id"=>"7"}
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 7]]
+Started GET "/posts/9/comments.json" for ::1 at 2017-04-13 17:38:01 -0500
+  Parameters: {"post_id"=>"8"}
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/10/comments.json" for ::1 at 2017-04-13 17:38:01 -0500
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"9"}
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+
+
+  Parameters: {"post_id"=>"10"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/6/comments.json" for ::1 at 2017-04-13 17:38:01 -0500
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"6"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-13 17:38:09 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 92ms (Views: 89.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-13 17:38:09 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-13 18:26:53 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendering partials/_admin_nav.html.erb
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_admin_nav.html.erb (0.9ms)
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 220ms (Views: 219.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts.json" for ::1 at 2017-04-13 18:26:54 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1/comments.json" for ::1 at 2017-04-13 18:26:54 -0500
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"1"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3/comments.json" for ::1 at 2017-04-13 18:26:54 -0500
+Processing by CommentsController#index as JSON
+Started GET "/posts/7/comments.json" for ::1 at 2017-04-13 18:26:54 -0500
+Started GET "/posts/4/comments.json" for ::1 at 2017-04-13 18:26:54 -0500
+Started GET "/posts/5/comments.json" for ::1 at 2017-04-13 18:26:54 -0500
+Started GET "/posts/6/comments.json" for ::1 at 2017-04-13 18:26:54 -0500
+  Parameters: {"post_id"=>"3"}
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"7"}
+Processing by CommentsController#index as JSON
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"6"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 7]]
+  Parameters: {"post_id"=>"4"}
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  Parameters: {"post_id"=>"5"}
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/8/comments.json" for ::1 at 2017-04-13 18:26:54 -0500
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/9/comments.json" for ::1 at 2017-04-13 18:26:54 -0500
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+Processing by CommentsController#index as JSON
+Started GET "/posts/10/comments.json" for ::1 at 2017-04-13 18:26:54 -0500
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"9"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms)
+
+
+  Parameters: {"post_id"=>"8"}
+Processing by CommentsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  Parameters: {"post_id"=>"10"}
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2/comments.json" for ::1 at 2017-04-13 18:26:54 -0500
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"2"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-13 18:27:32 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 84ms (Views: 80.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-13 18:27:32 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2017-04-13 18:27:46 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 89ms (Views: 87.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-13 18:27:54 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 81ms (Views: 77.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-13 18:27:54 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2017-04-13 18:28:14 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 79ms (Views: 77.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-13 18:28:24 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 91ms (Views: 89.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-13 18:28:24 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pianos/17/find_photo.json" for ::1 at 2017-04-13 18:29:36 -0500
+Processing by PianosController#find_photos as JSON
+  Parameters: {"id"=>"17"}
+  [1m[36mPiano Load (0.1ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" WHERE "pianos"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 17]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pianos/5/find_photo.json" for ::1 at 2017-04-13 18:29:40 -0500
+Processing by PianosController#find_photos as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mPiano Load (0.1ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" WHERE "pianos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 5]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-13 18:29:50 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendering partials/_admin_nav.html.erb
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_admin_nav.html.erb (1.1ms)
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts.json" for ::1 at 2017-04-13 18:29:50 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1/comments.json" for ::1 at 2017-04-13 18:29:50 -0500
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"1"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3/comments.json" for ::1 at 2017-04-13 18:29:50 -0500
+Processing by CommentsController#index as JSON
+Started GET "/posts/4/comments.json" for ::1 at 2017-04-13 18:29:50 -0500
+Started GET "/posts/2/comments.json" for ::1 at 2017-04-13 18:29:50 -0500
+  Parameters: {"post_id"=>"3"}
+Started GET "/posts/7/comments.json" for ::1 at 2017-04-13 18:29:50 -0500
+Processing by CommentsController#index as JSON
+Processing by CommentsController#index as JSON
+Started GET "/posts/5/comments.json" for ::1 at 2017-04-13 18:29:50 -0500
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"4"}
+  Parameters: {"post_id"=>"2"}
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"5"}
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Parameters: {"post_id"=>"7"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/8/comments.json" for ::1 at 2017-04-13 18:29:50 -0500
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 7]]
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+
+
+Processing by CommentsController#index as JSON
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/9/comments.json" for ::1 at 2017-04-13 18:29:50 -0500
+Started GET "/posts/10/comments.json" for ::1 at 2017-04-13 18:29:50 -0500
+  Parameters: {"post_id"=>"8"}
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"9"}
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"10"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/6/comments.json" for ::1 at 2017-04-13 18:29:50 -0500
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"6"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/posts/2/comments" for ::1 at 2017-04-13 18:30:40 -0500
+Processing by CommentsController#create as */*
+  Parameters: {"comment"=>{"body"=>"I HATE THIS PIANO POST FUCK YOU< JK", "commenter"=>"RON HOWARD"}, "post_id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (33.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "commenter", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "I HATE THIS PIANO POST FUCK YOU< JK"], ["commenter", "RON HOWARD"], ["post_id", 2], ["created_at", 2017-04-13 23:30:40 UTC], ["updated_at", 2017-04-13 23:30:40 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 37ms (Views: 0.5ms | ActiveRecord: 34.2ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-13 18:30:46 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendering partials/_admin_nav.html.erb
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_admin_nav.html.erb (0.9ms)
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 84ms (Views: 83.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts.json" for ::1 at 2017-04-13 18:30:46 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1/comments.json" for ::1 at 2017-04-13 18:30:46 -0500
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"1"}
+Started GET "/posts/2/comments.json" for ::1 at 2017-04-13 18:30:46 -0500
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+Started GET "/posts/3/comments.json" for ::1 at 2017-04-13 18:30:46 -0500
+Started GET "/posts/4/comments.json" for ::1 at 2017-04-13 18:30:46 -0500
+Processing by CommentsController#index as JSON
+Started GET "/posts/5/comments.json" for ::1 at 2017-04-13 18:30:46 -0500
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.5ms)
+
+
+Processing by CommentsController#index as JSON
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"4"}
+  Parameters: {"post_id"=>"2"}
+  Parameters: {"post_id"=>"3"}
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+Started GET "/posts/7/comments.json" for ::1 at 2017-04-13 18:30:46 -0500
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  Parameters: {"post_id"=>"5"}
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Processing by CommentsController#index as JSON
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  Parameters: {"post_id"=>"7"}
+Started GET "/posts/8/comments.json" for ::1 at 2017-04-13 18:30:46 -0500
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 7]]
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/10/comments.json" for ::1 at 2017-04-13 18:30:46 -0500
+Started GET "/posts/9/comments.json" for ::1 at 2017-04-13 18:30:46 -0500
+Processing by CommentsController#index as JSON
+Processing by CommentsController#index as JSON
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"8"}
+  Parameters: {"post_id"=>"10"}
+  Parameters: {"post_id"=>"9"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/6/comments.json" for ::1 at 2017-04-13 18:30:46 -0500
+Processing by CommentsController#index as JSON
+  Parameters: {"post_id"=>"6"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-13 20:20:28 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 80ms (Views: 77.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-13 20:20:28 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-13 20:31:01 -0500
+  
+ExecJS::RuntimeError (SyntaxError: unknown: Expected corresponding JSX closing tag for <img> (14:5)
+  12 | 			  <div className="right">
+  13 | 			  	<img src="images/services.png">
+> 14 | 			  </div>
+     |      ^
+  15 | 			</div>
+  16 | 		)
+  17 | 	}):
+  
+12 | 			  <div className="right">
+13 | 			  	<img src="images/services.png">
+> 14 | 			  </div>
+|      ^
+15 | 			</div>
+16 | 		)
+17 | 	}
+Parser.pp.raise ((execjs):63114:13)
+Parser.pp.jsxParseElementAt ((execjs):65726:12)
+Parser.pp.jsxParseElementAt ((execjs):65709:30)
+Parser.pp.jsxParseElementAt ((execjs):65709:30)
+Parser.pp.jsxParseElement ((execjs):65745:15)
+Parser.parseExprAtom ((execjs):65757:21)
+Parser.pp.parseExprSubscripts ((execjs):62378:19)
+Parser.pp.parseMaybeUnary ((execjs):62359:19)
+Parser.pp.parseExprOps ((execjs):62305:19)
+Parser.pp.parseMaybeConditional ((execjs):62287:19)
+execjs (2.7.0) lib/execjs/external_runtime.rb:39:in `exec'
+execjs (2.7.0) lib/execjs/external_runtime.rb:21:in `eval'
+execjs (2.7.0) lib/execjs/external_runtime.rb:46:in `call'
+babel-transpiler (0.7.0) lib/babel/transpiler.rb:28:in `transform'
+react-rails (1.10.0) lib/react/jsx/babel_transformer.rb:18:in `transform'
+react-rails (1.10.0) lib/react/jsx.rb:22:in `transform'
+react-rails (1.10.0) lib/react/jsx/processor.rb:6:in `call'
+sprockets (3.7.1) lib/sprockets/processor_utils.rb:75:in `call_processor'
+sprockets (3.7.1) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+sprockets (3.7.1) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+sprockets (3.7.1) lib/sprockets/processor_utils.rb:56:in `call_processors'
+sprockets (3.7.1) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+sprockets (3.7.1) lib/sprockets/loader.rb:60:in `block in load'
+sprockets (3.7.1) lib/sprockets/loader.rb:317:in `fetch_asset_from_dependency_cache'
+sprockets (3.7.1) lib/sprockets/loader.rb:44:in `load'
+sprockets (3.7.1) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+sprockets (3.7.1) lib/sprockets/cached_environment.rb:47:in `load'
+sprockets (3.7.1) lib/sprockets/bundle.rb:23:in `block in call'
+sprockets (3.7.1) lib/sprockets/utils.rb:200:in `dfs'
+sprockets (3.7.1) lib/sprockets/bundle.rb:24:in `call'
+sprockets (3.7.1) lib/sprockets/processor_utils.rb:75:in `call_processor'
+sprockets (3.7.1) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+sprockets (3.7.1) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+sprockets (3.7.1) lib/sprockets/processor_utils.rb:56:in `call_processors'
+sprockets (3.7.1) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+sprockets (3.7.1) lib/sprockets/loader.rb:60:in `block in load'
+sprockets (3.7.1) lib/sprockets/loader.rb:317:in `fetch_asset_from_dependency_cache'
+sprockets (3.7.1) lib/sprockets/loader.rb:44:in `load'
+sprockets (3.7.1) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+sprockets (3.7.1) lib/sprockets/cached_environment.rb:47:in `load'
+sprockets (3.7.1) lib/sprockets/base.rb:66:in `find_asset'
+sprockets (3.7.1) lib/sprockets/environment.rb:30:in `find_asset'
+sprockets (3.7.1) lib/sprockets/base.rb:92:in `[]'
+react-router-rails (0.13.3.1) lib/react/router/rails/railtie.rb:25:in `block (3 levels) in <class:Railtie>'
+react-router-rails (0.13.3.1) lib/react/router/rails/railtie.rb:24:in `map'
+react-router-rails (0.13.3.1) lib/react/router/rails/railtie.rb:24:in `block (2 levels) in <class:Railtie>'
+react-router-rails (0.13.3.1) lib/react/router/renderer.rb:81:in `setup_combined_js'
+react-router-rails (0.13.3.1) lib/react/router/renderer.rb:86:in `reset_combined_js!'
+react-router-rails (0.13.3.1) lib/react/router/renderer.rb:20:in `setup!'
+react-router-rails (0.13.3.1) lib/react/router/rails/railtie.rb:31:in `block (2 levels) in <class:Railtie>'
+activesupport (5.0.1) lib/active_support/callbacks.rb:396:in `instance_exec'
+activesupport (5.0.1) lib/active_support/callbacks.rb:396:in `block in make_lambda'
+activesupport (5.0.1) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+activesupport (5.0.1) lib/active_support/callbacks.rb:547:in `block (2 levels) in default_terminator'
+activesupport (5.0.1) lib/active_support/callbacks.rb:546:in `catch'
+activesupport (5.0.1) lib/active_support/callbacks.rb:546:in `block in default_terminator'
+activesupport (5.0.1) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.1) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.1) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_prepare_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+activesupport (5.0.1) lib/active_support/reloader.rb:87:in `prepare!'
+activesupport (5.0.1) lib/active_support/reloader.rb:41:in `block in <class:Reloader>'
+activesupport (5.0.1) lib/active_support/callbacks.rb:396:in `instance_exec'
+activesupport (5.0.1) lib/active_support/callbacks.rb:396:in `block in make_lambda'
+activesupport (5.0.1) lib/active_support/callbacks.rb:242:in `block in simple'
+activesupport (5.0.1) lib/active_support/callbacks.rb:456:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:456:in `each'
+activesupport (5.0.1) lib/active_support/callbacks.rb:456:in `call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_run_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+activesupport (5.0.1) lib/active_support/execution_wrapper.rb:108:in `run!'
+activesupport (5.0.1) lib/active_support/reloader.rb:113:in `run!'
+activesupport (5.0.1) lib/active_support/execution_wrapper.rb:70:in `block in run!'
+activesupport (5.0.1) lib/active_support/execution_wrapper.rb:67:in `tap'
+activesupport (5.0.1) lib/active_support/execution_wrapper.rb:67:in `run!'
+activesupport (5.0.1) lib/active_support/reloader.rb:59:in `run!'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:10:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+dragonfly (1.1.1) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.5ms)
+Started GET "/" for ::1 at 2017-04-13 20:31:13 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 688ms (Views: 685.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-13 20:31:15 -0500
+Processing by PianosController#index as JSON
+Started GET "/images/services.png" for ::1 at 2017-04-13 20:31:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/services.png"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+dragonfly (1.1.1) lib/dragonfly/cookie_monster.rb:9:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [59 times] (82.9ms)
+  Rendered /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (36.2ms)
+  Rendering /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/justinfrederick/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (206.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 444ms (Views: 10.6ms | ActiveRecord: 0.7ms)
+
+
