@@ -560,7 +560,12 @@ img {
 }
 
 .right img {
+  display: inline-block;
+  float: center;
+  margin-left: 10%;
+  margin-top: 13%;
   background: transparent;
+  width: 40%;
 }
 
 @media screen and (max-width: 990px) {
