@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
   # resources :users, only: [:create, :new]
 
   get '/login' => 'sessions#new'

@@ -46,6 +46,10 @@ gem 'react-bootstrap-rails'
 
 gem 'react-router-rails'
 
+gem "ckeditor"
+
+gem "paperclip"
+
 gem 'dragonfly'
 gem 'dragonfly-s3_data_store'
 

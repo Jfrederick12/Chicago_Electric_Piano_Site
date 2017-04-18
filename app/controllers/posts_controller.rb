@@ -15,12 +15,13 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(name: params[:name], body: params[:body])
+    @post = Post.create(post_params)
     @post.author_id = params[:current_user]
 
     respond_to do |format|
       if current_user && session[:user_id] = current_user.id 
         if @post.save
+          # p post_params
           format.html { redirect_to '/posts' }
           format.json { render :show, status: :created, location: @post }
         else
