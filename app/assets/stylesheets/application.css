@@ -671,3 +671,11 @@ img {
   height: 500px;
   width: 100%;
 }
+
+/*--------Admin Posts---------*/
+
+.admin-button {
+  margin-top: -10px;
+  margin-bottom: -20px;
+  background-color: #e6cf8b;
+}

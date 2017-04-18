@@ -10,6 +10,10 @@ class CommentsController < ApplicationController
     end
   end
 
+  def new
+    @comment = Comment.new(comment_params)
+  end
+
   def create
     @comment = Comment.new(comment_params)
     @comment.post_id = params[:post_id]
