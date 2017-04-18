@@ -1,16 +1,19 @@
 <% if current_user %>
+  <%= render template: "/partials/_admin_nav.html.erb" %>
   <h1>You're logged in already!</h1>
 	Signed in as <%= current_user.username %> | <%= link_to "Logout", '/logout' %>  
 <% else %>
 
-  <h1>Login</h1>
-	<%= form_tag '/login' do %>
+	<div class="banner">
+	  	<div class="sign-form">
+			<h1>Login</h1>
+			<%= form_tag '/login' do %>
 
-	Email: <%= text_field_tag :email %>
-	Password: <%= password_field_tag :password %>
-	<%= submit_tag "Submit" %>
-	<% end %>
+			Email: <%= text_field_tag :email %>
+			Password: <%= password_field_tag :password %>
+			<%= submit_tag "Submit" %>
+			<% end %>
+		</div>
+	</div>
 
 <% end %>
-
-

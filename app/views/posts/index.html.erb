@@ -1,6 +1,62 @@
-<%= render template: "/partials/_admin_nav.html.erb" %>
 
-<div class="banner">
-  <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_logo_white.png?raw=true" height="50%" width="50%" />
-</div>
-<%= react_component 'BlogPage' %>
+
+	<%= render template: "/partials/_admin_nav.html.erb" %>
+
+	<div class="banner">
+	  <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_logo_white.png?raw=true" height="50%" width="50%" />
+	</div>
+
+	<% if current_user %>
+		<div class="admin-button">
+			<div class="comment-button">
+				<div class="eff-1"></div>
+				<a href="posts/new">Add Post</a>
+			</div>
+		</div>
+		<%= react_component 'BlogPage' %>
+	<% else %>
+		<%= react_component 'BlogPage' %>
+	<% end %>
+
+
+
+<!-- 	<div class="banner">
+	  <img src="https://github.com/Jfrederick12/Chicago_Electric_Piano_Site/blob/master/app/assets/images/cepco_logo_white.png?raw=true" height="50%" width="50%" />
+	</div>
+
+	<div class="post-list">
+		<% @posts.each do |post| %>
+			<div class="post-container">
+				<span><%= post.name %></span><span><%= post.pretty_time %></span>
+				<p><%= post.body %></p>
+
+				<% post.comments.each do |comment| %>
+					<div class="comments">
+						<div class="post-comments">
+							<p><%= comment.body %></p>
+							<p><%= '- ' + comment.commenter %></p>
+						</div>
+					</div>
+				<% end %>
+
+				<div class="comment">
+					<div class="comment-button" data-toggle="collapse" data-target="#demo" >
+						<div class="comment-eff"></div>
+						<a>Comment</a>
+					</div>
+				</div>
+				<div id="demo" class="collapse">
+				  <form method="post" action="/posts/<%= post.id %>/comments">
+				    <ul class="add-comment">
+				      <li><textarea name='body' cols="50" rows="10" placeholder='comment'></textarea></li>
+				      <li><input type="text" name="commenter" placeholder="commenter"></li>
+				      <li><button class="button" type="submit">comment</button></li>
+				    </ul>
+				  </form>
+				</div>
+
+			</div>
+		<% end %>
+	</div>
+
+<% else %> -->
