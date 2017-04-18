@@ -18,14 +18,20 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.post_id = params[:post_id]
 
-    if @comment.save
-      respond_with @comment, json: @comment
+    respond_to do |format|
+      if @comment.save
+        format.html { redirect_to '/posts'}
+        format.json { render json: @comment }
+      else
+        format.html { redirect_to '/' }
+        format.json { render json: @comment }
+      end
     end
   end
 
   private
 
   def comment_params
-    params.require(:comment).permit(:id, :body, :commenter, :post_id)
+    params.permit(:id, :body, :commenter, :post_id)
   end
 end

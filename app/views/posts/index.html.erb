@@ -39,7 +39,7 @@
 					</div>
 				</div>
 				<div id="<%= post.id %>" class="collapse ">
-				  <form method="post" action="/posts/'<%= post.id %>'/comments">
+				  <form method="post" action="/posts/<%= post.id %>/comments">
 				    <ul class="add-comment">
 				      <li><textarea name='body' cols="50" rows="10" placeholder='comment'></textarea></li>
 				      <li><input type="text" name="commenter" placeholder="commenter"></li>
