@@ -21,7 +21,6 @@ class PostsController < ApplicationController
     respond_to do |format|
       if current_user && session[:user_id] = current_user.id 
         if @post.save
-          # p post_params
           format.html { redirect_to '/posts' }
           format.json { render :show, status: :created, location: @post }
         else

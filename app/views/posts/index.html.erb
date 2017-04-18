@@ -33,12 +33,12 @@
 				<% end %>
 
 				<div class="comment">
-					<div class="comment-button" data-toggle="collapse" data-target="#demo" >
+					<div class="comment-button" data-toggle="collapse" data-target="#<%= post.id %>" >
 						<div class="comment-eff"></div>
 						<a>Comment</a>
 					</div>
 				</div>
-				<div id="demo" class="collapse">
+				<div id="<%= post.id %>" class="collapse ">
 				  <form method="post" action="/posts/'<%= post.id %>'/comments">
 				    <ul class="add-comment">
 				      <li><textarea name='body' cols="50" rows="10" placeholder='comment'></textarea></li>
