@@ -38040,3 +38040,18 @@ Processing by PianosController#index as JSON
 Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2017-04-20 16:26:51 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 96ms (Views: 93.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 16:26:51 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
