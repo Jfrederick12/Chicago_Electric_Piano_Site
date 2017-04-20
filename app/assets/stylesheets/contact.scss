@@ -14,6 +14,24 @@
 }
 
 
+.contact-tray img {
+    background-color: transparent;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.contact-tray img:hover {
+  background-color: transparent;
+/*  -webkit-filter: saturate(1); 
+  filter: saturate(0);*/
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+
 
 
 
