@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   respond_to :json
 
   def index
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
     # respond_with @posts, json: @posts
     respond_to do |format|
       format.html {render :index}

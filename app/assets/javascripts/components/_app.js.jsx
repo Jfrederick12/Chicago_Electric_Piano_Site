@@ -6,6 +6,7 @@ const App = React.createClass({
         < ServicesContainer />
         < Tuning />
         < Pianos />
+        < ContactTray />
       </div>
     )
   }

@@ -1,0 +1,228 @@
+// Place all the styles related to the contact page here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.contact-tray {
+  margin-top: -30px;
+  background-color: #222222;
+  padding-bottom: 20px;
+  height: auto;
+  color: white;
+}
+
+
+
+
+
+.footer-social-icons {
+    text-align: left;
+    /*width: 100%;*/
+    margin: 0 auto;
+}
+
+.footer-social-icons nav {
+  text-align: center;
+  display: inline-block;
+}
+
+.footer-social-icons a:visited {
+	color: white;
+}
+
+.footer-social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.footer-social-icons a:hover {
+    color: #222222;
+    text-decoration: none;
+}
+
+
+.fa-behance {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #222222;
+}
+
+.fa-behance:hover {
+    background-color: #dddfd4;
+}
+
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #222222;
+}
+
+.fa-twitter:hover {
+    background-color: #dddfd4;
+}
+
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #222222;
+}
+
+.fa-instagram:hover {
+    background-color: #dddfd4;
+}
+
+.fa-instagram:visited {
+    color: white;
+}
+
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #222222;
+}
+
+.fa-facebook:hover {
+    background-color: #dddfd4;
+}
+
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #222222;
+}
+
+.fa-linkedin:hover {
+    background-color: #dddfd4;
+}
+
+
+
+/*Variables*/
+$color-grey: #eee;
+$color-grey-light: #f5f5f5;
+$color-primary: #e6cf8b;
+$radius: 3px;
+
+/*Function*/
+@function remy($value, $base: 16px) {
+ @return ($value / $base) * 1rem;
+}
+
+form {
+ padding: remy(32px);
+ margin-top: 3rem;
+ margin-bottom: 3rem;
+ margin-right: auto;
+ margin-left: 100px;
+ max-width: remy(600px);
+ background-color: #fff;
+ color: black;
+ border-radius: $radius;
+ box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+}
+
+.form-group {
+ padding: 0;
+ border: 0;
+ 
+ & + & {
+  margin-top: 1rem;
+ }
+}
+
+label {
+ display: inline-block;
+ margin-bottom: .5rem;
+ font-size: .75rem;
+ text-transform: uppercase;
+ touch-action: manipulation;
+}
+
+input,
+textarea {
+ display: block;
+ padding: .5rem .75rem;
+ width: 100%;
+ font-size: 1rem;
+ line-height: 1.25;
+ color: #22264b;
+ background-color: #fff;
+ background-image: none;
+ background-clip: padding-box;
+ border-top: 0;
+ border-right: 0;
+ border-bottom: 1px solid $color-grey;
+ border-left: 0;
+ border-radius: $radius;
+
+ 
+ &:focus {
+  outline: 0;
+  border-bottom-color: $color-primary;
+ }
+}
+
+textarea {
+ resize: vertical;
+}
+
+.btn {
+ display: inline-block;
+ padding: .75rem 1rem;
+ margin-top: 1.618rem;
+ font-weight: 400;
+ text-align: center;
+ text-transform: uppercase;
+ color: #fff;
+ vertical-align: middle;
+ white-space: nowrap;
+ background-color: $color-primary;
+ border: 1px solid transparent;
+ box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+ cursor: pointer;
+ user-select: none;
+
+ 
+ &:focus,
+ &:hover {
+  background-color: lighten($color-primary, 13%);
+  box-shadow: 0 18px 35px rgba(50,50,93,.1),0 8px 15px rgba(0,0,0,.07);
+ }
+ 
+ &:focus {
+  outline: 0;
+ }
+}
+
+
+
+
+
+
+
+
+
+
