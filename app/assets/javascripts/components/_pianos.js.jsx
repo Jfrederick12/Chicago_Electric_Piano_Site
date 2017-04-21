@@ -30,6 +30,7 @@ const Pianos = React.createClass({
       return(
         <div id="pianos"><a name="pianos"></a>
           < PianosList pianos={this.state.pianos} />
+          < ArchivedPianos pianos={this.state.pianos}/>
         </div>
       )
     }

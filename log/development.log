@@ -38764,3 +38764,709 @@ Processing by PianosController#index as JSON
 Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2017-04-20 17:02:26 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 444ms (Views: 441.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:02:28 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 35ms (Views: 11.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:02:34 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 109ms (Views: 107.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:02:34 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:02:43 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 123ms (Views: 121.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:02:44 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:03:36 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 435ms (Views: 432.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:03:38 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:03:42 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 104ms (Views: 101.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:03:43 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:03:46 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 105ms (Views: 103.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:03:46 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:04:39 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 119ms (Views: 117.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:04:40 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:04:44 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:04:45 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:04:56 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 115ms (Views: 113.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:04:56 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:05:27 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 118ms (Views: 116.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:05:27 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:06:09 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 122ms (Views: 120.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:06:10 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:06:13 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 101ms (Views: 98.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:06:14 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:06:27 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 133ms (Views: 131.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:06:28 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:06:36 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 123ms (Views: 121.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:06:36 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:07:13 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 379ms (Views: 376.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:07:15 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:07:22 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 107ms (Views: 104.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:07:22 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:07:43 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 112ms (Views: 109.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:07:44 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:07:54 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 102ms (Views: 99.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:07:54 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:09:37 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 387ms (Views: 384.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:09:39 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 17ms (Views: 12.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:10:51 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1124ms (Views: 1122.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:10:52 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:11:52 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1172ms (Views: 1169.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:11:54 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:12:28 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1218ms (Views: 1216.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:12:30 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:13:59 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1127ms (Views: 1124.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:14:00 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:15:00 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 429ms (Views: 426.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:15:02 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:15:21 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 443ms (Views: 440.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:15:23 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:15:45 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1840ms (Views: 1838.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:16:18 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1149ms (Views: 1146.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:16:19 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:16:52 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 187ms (Views: 185.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:16:53 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:17:37 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2494ms (Views: 2491.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:17:40 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:18:38 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 740ms (Views: 728.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:18:39 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:19:25 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 158ms (Views: 155.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:19:26 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:23:38 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 2852ms (Views: 2840.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:24:19 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 2913ms (Views: 2910.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:24:51 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1117ms (Views: 1115.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:25:36 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1133ms (Views: 1130.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:26:09 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 132ms (Views: 130.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:26:10 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:26:43 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1082ms (Views: 1080.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:27:11 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1509ms (Views: 1507.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:30:58 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 117ms (Views: 115.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:30:59 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:32:57 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 598ms (Views: 586.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:32:58 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:41:01 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 106ms (Views: 104.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:41:02 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:41:05 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:41:05 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:42:00 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 440ms (Views: 437.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:42:02 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 32ms (Views: 13.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:44:33 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 432ms (Views: 428.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:44:34 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 18ms (Views: 13.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:44:50 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 389ms (Views: 386.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:44:51 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 17:44:58 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered site/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 89ms (Views: 87.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pianos.json" for ::1 at 2017-04-20 17:44:58 -0500
+Processing by PianosController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPiano Load (0.2ms)[0m  [1m[34mSELECT "pianos".* FROM "pianos"[0m
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pianos/7/find_photo.json" for ::1 at 2017-04-21 11:49:55 -0500
+Processing by PianosController#find_photos as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mPiano Load (0.3ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" WHERE "pianos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 7]]
+Completed 200 OK in 105ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pianos/18/find_photo.json" for ::1 at 2017-04-21 11:50:02 -0500
+Processing by PianosController#find_photos as JSON
+  Parameters: {"id"=>"18"}
+  [1m[36mPiano Load (0.1ms)[0m  [1m[34mSELECT  "pianos".* FROM "pianos" WHERE "pianos"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."piano_id" = ?[0m  [["piano_id", 18]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-21 11:50:15 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 7]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 1093ms (Views: 1081.6ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/posts/9/comments" for ::1 at 2017-04-21 11:50:44 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"body"=>"", "commenter"=>"", "post_id"=>"9"}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("body", "commenter", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", ""], ["commenter", ""], ["post_id", 9], ["created_at", 2017-04-21 16:50:44 UTC], ["updated_at", 2017-04-21 16:50:44 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-04-21 11:50:44 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 7]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 122ms (Views: 120.5ms | ActiveRecord: 1.0ms)
+
+

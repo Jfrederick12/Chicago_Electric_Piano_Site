@@ -10,7 +10,11 @@ const PianosList = React.createClass({
     const fenderPianos = this.props.pianos.filter((piano) => {
       return piano.make === make
     });
-    this.setState({ searchPianos: fenderPianos, open: !this.state.open })
+    if (!this.state.open) {
+      this.setState({ searchPianos: fenderPianos, open: !this.state.open })
+    } else {
+      this.setState({ searchPianos: fenderPianos, open: this.state.open })
+    }
   },
 
   render() {
@@ -60,7 +64,7 @@ const PianosList = React.createClass({
                 <a>Clavinet & More</a>
               </div>
             </div>
-            <Panel >
+            <Panel collapsible expanded={this.state.open}>
               { pianos }
             </Panel>
           </div>
